@@ -1,10 +1,11 @@
 import Head from 'next/head'
+import Layout from '../components/layout'
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <Layout>
       <Head>
-        <title>Create Next App</title>
+        <title>Jonathan A Klein Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -77,6 +78,6 @@ export default function Home() {
           <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
         </a>
       </footer>
-    </div>
+    </Layout>
   )
 }
