@@ -4,45 +4,28 @@ import Logo from '../public/images/jk-Logo.png'
 import style from './menu.module.scss'
 
 export default function Menu(){
+
+  function closeNav(){
+    document.getElementById("myNav").style.display="none";
+  }
+
+  function openNav(){
+    document.getElementById("myNav").style.display="block";
+  }
+
+
   return(
-  <header className="flex flex-wrap flex-row justify-between md:items-center md:space-x-4 bg-white py-6 px-6 relative">
-        <Link href="/"><a className="block"><span className="sr-only">Jonathan A Klein</span>
-          <Image 
-            src={Logo}
-            width={48}
-            height={30}
-            alt="Themes.dev Logo" 
-            title="Themes.dev Logo"
-          />
-        </a></Link>
-<input type="checkbox" id={style.main-navigation-toggle} class={style.btn btn--close} title="Toggle main navigation" />
-<label for="main-navigation-toggle">
-  <span></span>
-</label>
-<nav id="main-navigation" class="nav-main">
-  <ul class="menu">
-    <li class="menu__item">
-      <Link href="/"><a class="menu__link">Home</a></Link>
-    </li>
-    <li class="menu__item">
-      <Link href="/about"><a class="menu__link">About</a></Link>
-    </li>
-    <li class="menu__item">
-      <Link href="#0"><a class="menu__link">Portfolio</a></Link>
-      <ul class="submenu">
-        <li class="menu__item">
-          <Link href="/portfolio/painting"><a class="menu__link">Paintings</a></Link>
-        </li>
-      </ul>
-    </li>
-    <li class="menu__item">
-      <Link href="/contact"><a class="menu__link">Contact</a></Link>
-    </li>
-    <li class="menu__item">
-      <Link href="/resume"><a class="menu__link">Resume</a></Link>
-    </li>
-  </ul>
-</nav>
-</header>
+  <header className="">
+    <div id="myNav" className={style.overlay}>
+  <a href="javascript:void(0)" className={style.closebtn} onClick={closeNav}>&times;</a>
+  <div className={style.overlayContent}>
+    <Link href="/"><a>Home</a></Link>
+    <Link href="/about"><a>About</a></Link>
+    <Link href="/contact"><a>Contact</a></Link>
+    <Link href="/resume"><a>Resume</a></Link>
+  </div>
+</div>
+<span className={style.open} onClick={openNav}>&#9776;</span>
+  </header>
 )
 }
