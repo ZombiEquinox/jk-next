@@ -1,0 +1,36 @@
+@import 'styles/variables';
+
+.footer{
+  background-color: $brightWhite;
+  border-top: 1px solid $darkBlack;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  .social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: .2;
+    svg{
+      cursor: pointer;
+      width: 2rem;
+      height: 2rem;
+      padding: .25rem;
+      fill: $black;
+    }
+  }
+}
+
+@media screen and (max-width: 640px){
+  .footer{
+    flex-direction: column;
+    .copyright{
+      margin-bottom: 1.5rem;
+    }
+    .social{
+      width: 100%;
+    }
+  }
+}

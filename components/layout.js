@@ -1,20 +1,18 @@
 import Menu from './menu';
+import Footer from './footer'
 import Head from 'next/head';
 
 export default function Layout({children}){
   return(
-    <div className="container mx-auto">
+    <div>
       <Head>
-        <title>Jonathan A Klein</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/favicon.ico" />
       </Head>
       <Menu/>
-      <main className="flex flex-col items-center justify-center min-h-screen py-2">
+      <main className="container mx-auto px-4 py-4">
         {children}
       </main>
-      <footer>
-        &copy; 2021
-      </footer>
+      <Footer/>
     </div>
   )
 }
