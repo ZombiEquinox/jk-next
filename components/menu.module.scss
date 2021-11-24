@@ -1,21 +1,23 @@
 @import 'styles/variables';
 .menu{
   padding: 1rem;
-  background-color: $darkBlack;
+  position: sticky;
+  top: 0;
+  z-index: 99;
   .open{
-  font-size:30px;
-  cursor:pointer;
-  color: $white;
-}
+    font-size:30px;
+    cursor:pointer;
+    color: $white;
+  }
   .overlay {
     height: 100%;
     width: 100%;
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 99;
     top: 0;
     left: 0;
-    background-color: $primaryColor;
+    background-color: $primary;
     a {
       padding: 8px;
       text-decoration: none;
@@ -33,13 +35,13 @@
       line-height: .5;
       cursor:pointer;
       &:focus, &:hover{
-        color: $brightWhite;
+        color: $white;
       }
     }
   }
   .overlayContent {
     position: relative;
-    top: 25%;
+    top: 3%;
     width: 100%;
     text-align: center;
     margin-top: 30px;
@@ -48,7 +50,7 @@
         text-decoration: underline;
       }
       &:focus, &:hover{
-        color: $brightWhite;
+        color: $white;
       }
     }
   }

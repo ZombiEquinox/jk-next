@@ -1,13 +1,12 @@
 @import 'styles/variables';
 
 .footer{
-  background-color: $brightWhite;
-  border-top: 1px solid $darkBlack;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  color: $white;
   .social{
     display: flex;
     flex-direction: row;
@@ -18,7 +17,7 @@
       width: 2rem;
       height: 2rem;
       padding: .25rem;
-      fill: $black;
+      fill: $white;
     }
   }
 }

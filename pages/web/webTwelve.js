@@ -1,0 +1,25 @@
+import Layout from '../../components/layout'
+import Head from 'next/head'
+import Image from 'next/image'
+import Link from 'next/link'
+
+import image from '../../public/images/web/oaklawn.png'
+
+export default function webTwelve(){
+  return(
+    <Layout>
+      <Head>
+        <title>Oak Lawn Estates | Jonathan A Klein</title>
+      </Head>
+      <Link href="/web">&lt; Back</Link>
+      <div>
+        <h1>Oak Lawn Estates</h1>
+        <p><strong>Company:</strong> Onefire</p>
+        <p><strong>Position:</strong> Junior Front-End Developer / Designer</p>
+        <p><strong>URL:</strong> No longer available</p>
+        <p>After a consultant failed to deliver this project, OneFire decided to bring this in-house. Oak lawn website was a fantastic website, to bring a old design and modernize it. With a theme purchased we customized it and added the content that they needed, once site development was complete I created a training guide for the people working at Oak lawn. After training I customized the theme even more to help with a few items that were unnecessary for the location of Oak lawn.</p>
+        <Image src={image} width="1440px" height="794px" />                         
+      </div>
+    </Layout>
+  )
+}
