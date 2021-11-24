@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import image from '../../public/images/web/potain-home.png'
+import image from '../../public/images/web/potain-home.jpg'
 
 export default function webSeventeen(){
   return(
@@ -18,7 +18,7 @@ export default function webSeventeen(){
         <p><strong>Position:</strong> Web Developer</p>
         <p><strong>URL:</strong> <a href="https://www.potainbuildbetter.com/">https://www.potainbuildbetter.com/</a></p>
         <p></p>
-        <Image src={image} width="1903px" height="3980px" />                       
+        <Image src={image} width="952px" height="1991px" />                       
       </div>
     </Layout>
   )

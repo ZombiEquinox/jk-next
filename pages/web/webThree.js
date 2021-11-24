@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import image from '../../public/images/web/website3-1.png'
+import image from '../../public/images/web/website3-1.jpg'
 
 export default function webThree(){
   return(
@@ -19,7 +19,7 @@ export default function webThree(){
         <p><strong>URL:</strong> Website no longer available</p>
         <p><small><strong>Note:</strong> Game no longer available on website</small></p>
         <p>This is a basic matching game that teaches the kids muscle memory. Images were created by Illinois State University sports design team. The pieces will randomly rearrange themselves every time you play, making it so you can play again and again and having a new experience.</p>
-        <Image src={image} width="1902px" height="1084px" />
+        <Image src={image} width="955px" height="492px"/>
         
         
       </div>

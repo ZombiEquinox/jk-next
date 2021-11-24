@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import image from '../../public/images/web/greaterpeoriaworks.png'
+import image from '../../public/images/web/greaterpeoriaworks.jpg'
 import image2 from '../../public/images/web/greaterpeoriaworks-1.png'
 
 export default function webSeven(){

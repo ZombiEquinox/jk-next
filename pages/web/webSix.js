@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import image from '../../public/images/web/StudentHealth.png'
+import image from '../../public/images/web/StudentHealth.jpg'
 
 export default function webSix(){
   return(

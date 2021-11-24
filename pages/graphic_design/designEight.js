@@ -3,10 +3,10 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import image from '../../public/images/graphic_design/graphicdesign16.png'
-import image2 from '../../public/images/graphic_design/graphicdesign17.png'
-import image3 from '../../public/images/graphic_design/graphicdesign18.png'
-import image4 from '../../public/images/graphic_design/graphicdesign19.png'
+import image from '../../public/images/graphic_design/graphicdesign16.jpg'
+import image2 from '../../public/images/graphic_design/graphicdesign17.jpg'
+import image3 from '../../public/images/graphic_design/graphicdesign18.jpg'
+import image4 from '../../public/images/graphic_design/graphicdesign19.jpg'
 import image5 from '../../public/images/graphic_design/graphicdesign20.png'
 
 export default function designEight(){

@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import {Document} from 'react-pdf'
 
-import image from '../../public/images/web/cat-connect.png'
+import image from '../../public/images/web/cat-connect.jpg'
 
 export default function webEleven(){
   return(
