@@ -3,9 +3,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import image from '../../public/images/web/onepurcbd-home.jpg'
-import image2 from '../../public/images/web/onepurcbd-product.jpg'
-
 export default function webSixteen(){
   return(
     <Layout>
@@ -19,9 +16,9 @@ export default function webSixteen(){
         <p><strong>Position:</strong> Web Developer</p>
         <p><strong>URL:</strong> <a href="https://www.1purecbd.com/">https://www.1purecbd.com/</a></p>
         <p></p>
-        <Image src={image} width="952px" height="3114px" />
+        <Image src='https://jk-docs.s3.us-east-2.amazonaws.com/images/web/onepurcbd-home.jpg' width="952px" height="3114px" />
         <p>Product Page</p>                  
-        <Image src={image2} width="952px" height="1683px" />                         
+        <Image src='https://jk-docs.s3.us-east-2.amazonaws.com/images/web/onepurcbd-product.jpg' width="952px" height="1683px" />                         
       </div>
     </Layout>
   )

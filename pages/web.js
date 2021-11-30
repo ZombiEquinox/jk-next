@@ -2,24 +2,6 @@ import Layout from "../components/layout"
 import Head from 'next/head'
 import Card from '../components/card'
 
-import webOne from '../public/images/thumb/web/website1.jpg'
-import webTwo from '../public/images/thumb/web/website2.jpg'
-import webThree from '../public/images/thumb/web/website3.jpg'
-import webFour from '../public/images/thumb/web/website4.jpg'
-import webFive from '../public/images/thumb/web/website9.jpg'
-import webSix from '../public/images/thumb/web/website20.jpg'
-import webSeven from '../public/images/thumb/web/greaterpeoriaworksthumb.png'
-import webEight from '../public/images/thumb/web/pixelpredictive-thumb.png'
-import webNine from '../public/images/thumb/web/riverplex-thumb.png'
-import webTen from '../public/images/thumb/web/riverplex-app-thumb.png'
-import webEleven from '../public/images/thumb/web/cat-conn-logo.svg'
-import webTwelve from '../public/images/thumb/web/oaklawn-thumb.png'
-import webThirteen from '../public/images/thumb/web/astuff_website.jpg'
-import webFourteen from '../public/images/thumb/web/astuff_data_thumb.jpg'
-import webFifteen from '../public/images/thumb/web/home-manitowoc-crawler-crane.jpg'
-import webSixteen from '../public/images/thumb/web/onepurcbd-home.jpg.jpg'
-import webSeventeen from '../public/images/thumb/web/potain-home.jpg'
-import webEighteen from '../public/images/thumb/web/bep.jpg'
 export default function Web(){
   let width = 600;
   let height = 600;
@@ -30,24 +12,24 @@ export default function Web(){
       </Head>
       <h1>Web Development and Design</h1>
       <div className="flex justify-center item-stretch flex-wrap">
-        <Card link="/web/webOne" title="Reggie Red Bird Coloring" text="View Description" img={webOne} width={width} height={height}/>
-        <Card link="/web/webTwo" title="ISU Redbird Ball Catch Game" text="View Description" img={webTwo} width={width} height={height}/>
-        <Card link="/web/webThree" title="ISU Redbird Matching Game" text="View Description" img={webThree} width={width} height={height}/>
-        <Card link="/web/webFour" title="ISU Redbird Typing Game" text="View Description" img={webFour} width={width} height={height}/>
-        <Card link="/web/webFive" title="ISU Association of Black Academic Employees" text="View Description" img={webFive} width={width} height={height}/>
-        <Card link="/web/webSix" title="ISU Student Health Services" text="View Description" img={webSix} width={width} height={height}/>
-        <Card link="/web/webSeven" title="Greater Peoria Works" text="View Description" img={webSeven} width={width} height={height}/>
-        <Card link="/web/webEight" title="PixelPrediction" text="View Description" img={webEight} width={width} height={height}/>
-        <Card link="/web/webNine" title="Peoria Riverplex" text="View Description" img={webNine} width={width} height={height}/>
-        <Card link="/web/webTen" title="Peoria Riverplex Mobile App" text="View Description" img={webTen} width={width} height={height}/>
-        <Card link="/web/webEleven" title="CAT Connect" text="View Description" img={webEleven} width={width} height={height}/>
-        <Card link="/web/webTwelve" title="Oak Lawn Estates" text="View Description" img={webTwelve} width={width} height={height}/>
-        <Card link="/web/webThirteen" title="AutonomouStuff" text="View Description" img={webThirteen} width={width} height={height}/>
-        <Card link="/web/webFourteen" title="AutonomouStuff Data Calculator" text="View Description" img={webFourteen} width={width} height={height}/>
-        <Card link="/web/webFifteen" title="Manitowoc Small Crawler Crane" text="View Description" img={webFifteen} width={width} height={height}/>
-        <Card link="/web/webSixteen" title="1PURE CBD" text="View Description" img={webSixteen} width={width} height={height}/>
-        <Card link="/web/webSeventeen" title="Potain Self-Erecting Crawler Crane" text="View Description" img={webSeventeen} width={width} height={height}/>
-        <Card link="/web/webEighteen" title="Best Estimate Pro" text="View Description" img={webEighteen} width={width} height={height}/>
+        <Card link="/web/webOne" title="Reggie Red Bird Coloring" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/website1.jpg' width={width} height={height}/>
+        <Card link="/web/webTwo" title="ISU Redbird Ball Catch Game" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/website2.jpg' width={width} height={height}/>
+        <Card link="/web/webThree" title="ISU Redbird Matching Game" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/website3.jpg' width={width} height={height}/>
+        <Card link="/web/webFour" title="ISU Redbird Typing Game" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/website4.jpg' width={width} height={height}/>
+        <Card link="/web/webFive" title="ISU Association of Black Academic Employees" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/website9.jpg' width={width} height={height}/>
+        <Card link="/web/webSix" title="ISU Student Health Services" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/website20.jpg' width={width} height={height}/>
+        <Card link="/web/webSeven" title="Greater Peoria Works" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/greaterpeoriaworksthumb.png' width={width} height={height}/>
+        <Card link="/web/webEight" title="PixelPrediction" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/pixelpredictive-thumb.png' width={width} height={height}/>
+        <Card link="/web/webNine" title="Peoria Riverplex" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/riverplex-thumb.png' width={width} height={height}/>
+        <Card link="/web/webTen" title="Peoria Riverplex Mobile App" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/riverplex-app-thumb.png' width={width} height={height}/>
+        <Card link="/web/webEleven" title="CAT Connect" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/cat-conn-logo.svg' width={width} height={height}/>
+        <Card link="/web/webTwelve" title="Oak Lawn Estates" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/oaklawn-thumb.png' width={width} height={height}/>
+        <Card link="/web/webThirteen" title="AutonomouStuff" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/astuff_website.jpg' width={width} height={height}/>
+        <Card link="/web/webFourteen" title="AutonomouStuff Data Calculator" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/astuff_data_thumb.jpg' width={width} height={height}/>
+        <Card link="/web/webFifteen" title="Manitowoc Small Crawler Crane" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/home-manitowoc-crawler-crane.jpg'width={width} height={height}/>
+        <Card link="/web/webSixteen" title="1PURE CBD" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/onepurcbd-home.jpg.jpg'width={width} height={height}/>
+        <Card link="/web/webSeventeen" title="Potain Self-Erecting Crawler Crane" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/potain-home.jpg' width={width} height={height}/>
+        <Card link="/web/webEighteen" title="Best Estimate Pro" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/bep.jpg' width={width} height={height}/>
       </div>
       <div>
         <h2>More Work</h2>
@@ -94,22 +76,24 @@ export default function Web(){
         </ul>
         <h3>Keplr Vision</h3>
         <ul>
-          <li><strong>Role:</strong> Web Designer/Front-End Developer - Keplr Vision Employee Portal</li>
+          <li><strong>Role:</strong> Web Designer/Front-End Developer - Keplr Vision Employee Portal - WordPress</li>
           <li><strong>Role:</strong> Web Designer/Front-End Developer - Partner SEO Updates</li>
         </ul>
         <h3>MComm Group</h3>
         <ul>
-          <li><strong>Role:</strong> Front-End Developer - MComm CRM Redesign</li>
-          <li><strong>Role:</strong> Front-End Developer - 1Pure CBD Doctors Series Promo Page</li>
+          <li><strong>Role:</strong> Front-End Developer - MComm CRM Redesign - Bootstrap / Ruby on Rails</li>
+          <li><strong>Role:</strong> Front-End Developer - 1Pure CBD Doctors Series Promo Page - Foundations / Jekyll</li>
+          <li><strong>Role:</strong> Front-End Developer - <a href="https://mobileagsolutions.com/">Mobile Ag Solutions Promo page</a> - Foundations / Jekyll</li>
+          <li><strong>Role:</strong> Front-End Developer - Mobile Ag Solutions Prototype - Adobe XD</li>
         </ul>
         <h3>Brado</h3>
         <ul>
           <li><strong>Role:</strong> Senior Front-End Developer - Email Templates<br/>Bauch + Lomb</li>
           <li><strong>Role:</strong> Senior Front-End Developer - Email Templates<br/>Avellino</li>
           <li><strong>Role:</strong> Senior Front-End Developer - Email Templates<br/>Baxter</li>
-          <li><strong>Role:</strong> Senior Front-End Developer - Site Updates<br/><a href="https://www.geneticsandeyecare.com/">Genetics and Eyecare Today</a></li>
-          <li><strong>Role:</strong> Senior Front-End Developer - Site Updates<br/><a href="https://smartmouth.com/">Smart Mouth</a></li>
-          <li><strong>Role:</strong> Senior Front-End Developer - Site Updates<br/><a href="https://www.infertile.com/">Infertility Center of St. Louis</a></li>
+          <li><strong>Role:</strong> Senior Front-End Developer - Site Updates<br/><a href="https://www.geneticsandeyecare.com/">Genetics and Eyecare Today</a> - React</li>
+          <li><strong>Role:</strong> Senior Front-End Developer - Site Updates<br/><a href="https://smartmouth.com/">Smart Mouth</a> - WordPress</li>
+          <li><strong>Role:</strong> Senior Front-End Developer - Site Updates<br/><a href="https://www.infertile.com/">Infertility Center of St. Louis</a> - WordPress</li>
         </ul>
       </div>
     </Layout>

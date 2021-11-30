@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import Logo from '../public/images/jk-Logo.png'
 import style from './menu.module.scss'
 
 export default function Menu(){
@@ -27,13 +26,14 @@ export default function Menu(){
         <Link href="/graphic_design"><a className={router.pathname == "/graphic_design" ? "active" : ""}>Graphic Design</a></Link>
         <Link href="/painting"><a className={router.pathname == "/painting" ? "active" : ""}>Paintings</a></Link>
         <Link href="/drawing"><a className={router.pathname == "/drawing" ? "active" : ""}>Drawings</a></Link>
+        <Link href="/interactive"><a className={router.pathname == "/interactive" ? "active" : ""}>Interactive</a></Link>
         <Link href="/about"><a className={router.pathname == "/about" ? "active" : ""}>About</a></Link>
       </nav>
     </div>
     <header className="flex flex-row justify-between items-center">
       <Link href="/"><a>
         <Image 
-        src={Logo}
+        src="https://jk-docs.s3.us-east-2.amazonaws.com/images/jk-Logo.png"
         width={50}
         height={33}
         /></a>
