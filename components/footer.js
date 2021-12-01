@@ -14,7 +14,7 @@ function year(){
         &copy;{year()} <Link href="/">JonathanAKlein.com</Link>
       </div>
       <div>
-        <p>Excuse My Mess</p>
+        <Link href="/myMess">Excuse My Mess</Link>
       </div>
       <div className={style.social}>
       <a href="https://steamcommunity.com/id/zombiequinox/" target="_blank" rel="nofollow"><IoLogoSteam height={32} width={32}/></a>

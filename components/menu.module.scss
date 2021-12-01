@@ -19,12 +19,6 @@
     left: 0;
     background-color: $primary;
     a {
-      padding: 8px;
-      text-decoration: none;
-      font-size: 36px;
-      color: #818181;
-      display: block;
-      transition: 0.3s;
       
     }
     .closebtn {
@@ -46,8 +40,15 @@
     text-align: center;
     margin-top: 30px;
     a{
-      &.active{
+      padding: 8px;
+      text-decoration: none;
+      font-size: 36px;
+      color: $white;
+      display: block;
+      transition: 0.3s;
+      &.active {
         text-decoration: underline;
+        color: $secondary;
       }
       &:focus, &:hover{
         color: $white;

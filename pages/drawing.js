@@ -10,7 +10,7 @@ export default function Drawings(){
       <Head>
         <title>Drawings | Jonathan A Klein</title>
       </Head>
-      <h1>Graphic Design</h1>
+      <h1>Drawings</h1>
       <div className="flex justify-center item-stretch flex-wrap">
         <Card link="/drawing/drawingOne" title="Gamers Still Life Drawing" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/drawing/drawing1.jpg' width={width} height={height}/>
         <Card link="/drawing/drawingTwo" title="I'm burning Inside" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/drawing/drawing2.jpg' width={width} height={height}/>

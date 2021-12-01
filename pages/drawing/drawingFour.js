@@ -13,7 +13,7 @@ export default function drawingFour(){
       <div>
         <h1>Nude Study 1</h1>
         <p>This was one of the nude studies that I have done. This piece was a collaboration piece. I would start the drawing, after a certain period of time, we would change drawers and the next person would build off of mine, then another person would trade with them, and so on.</p>
-        <Image src="https://jk-docs.s3.us-east-2.amazonaws.com/images/drawing/drawing2.jpg" width="453px" height="604px" />
+        <Image src="https://jk-docs.s3.us-east-2.amazonaws.com/images/drawing/drawing6.jpg" width="604px" height="453px" />
       </div>
     </Layout>
   )
