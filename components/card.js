@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function Card(props){
   return(
-    <div className="card shadow-xl image-full w-full md:w-96 m-2">
+    <div className="card shadow-xl image-full w-full m-2">
       <figure>
         <Image src={props.img} width={props.width} height={props.height} layout="responsive" className="object-cover"/>
       </figure> 

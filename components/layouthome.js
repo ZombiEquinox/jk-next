@@ -11,7 +11,7 @@ export default function LayoutHome({children}){
       </Head>
       <Menu/>
       <HomeHero/>
-      <main className="container mx-auto px-4 py-4">
+      <main className="container min-h-screen mx-auto px-4 py-4">
         {children}
       </main>
       <Footer/>

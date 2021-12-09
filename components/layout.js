@@ -9,7 +9,7 @@ export default function Layout({children}){
         <link rel="icon" href="/images/favicon.ico" />
       </Head>
       <Menu/>
-      <main className="container mx-auto px-4 py-4">
+      <main className="container min-h-screen mx-auto px-4 py-4">
         {children}
       </main>
       <Footer/>

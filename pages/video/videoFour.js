@@ -14,7 +14,7 @@ export default function videoThree(){
         <h1>Antistatic Image, an Interview with Ian Emser</h1>
         <p><strong>Position:</strong> Illinois State University Student</p>
         <p>A Documentary about one of my best friends, Ian Emser, who had a web comic named AntiStatic Image. His site is sadly no longer active.</p>
-        <iframe src="//player.vimeo.com/video/38739305" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" width="500" height="281" frameborder="0"></iframe>
+        <div className="iframeContainer"><iframe src="//player.vimeo.com/video/38739305" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" width="500" height="281" frameborder="0"></iframe></div>
       </div>
     </Layout>
   )

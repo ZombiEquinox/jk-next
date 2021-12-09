@@ -12,7 +12,7 @@ export default function Video(){
         <title>Video | Jonathan A Klein</title>
       </Head>
       <h1>Videography</h1>
-      <div className="flex justify-center item-stretch flex-wrap">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <Card link="/video/videoOne" title="1min Arduino Commercial" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/video/video1.jpg' width={width} height={height}/>
         <Card link="/video/videoTwo" title="Dance with the Devil in the pale moon light" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/video/video2.jpg' width={width} height={height}/>
         <Card link="/video/videoThree" title="Ari, the 5 Year old Minecraft Player" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/video/video3.jpg' width={width} height={height}/>

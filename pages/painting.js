@@ -13,7 +13,7 @@ export default function Paintings(){
         <title>Paintings | Jonathan A Klein</title>
       </Head>
       <h1>Paintings</h1>
-      <div className="flex justify-center item-stretch flex-wrap">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <Card link="/painting/paintingOne" title="Gamers Still-Life Painting" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/painting/tpainting1.jpg' width={width} height={height}/>
         <Card link="/painting/paintingTwo" title="Abstract Painting" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/painting/tpainting2.jpg' width={width} height={height}/>
         <Card link="/painting/paintingThree" title="Turn the Gears of Life" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/painting/tpainting3.jpg' width={width} height={height}/>

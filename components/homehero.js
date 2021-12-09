@@ -3,10 +3,9 @@ import Link from 'next/link'
 
 export default function HomeHero(){
   return(
-    <div className="hero min-h-screen bg-base-200">
+    <div className="hero min-h-screen">
   <div className="text-center hero-content">
     <div className="max-w-md">
-      <p><small>Site is under redevelopment</small></p>
       <h1 className="mb-5 text-5xl font-bold header-text">
             Konnic<span className={style.hello}>Hi</span>wa
           </h1> 

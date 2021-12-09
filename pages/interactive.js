@@ -11,7 +11,7 @@ export default function Interactive(){
         <title>Interactive Art | Jonathan A Klein</title>
       </Head>
       <h1>Interactive Art</h1>
-      <div className="flex justify-center item-stretch flex-wrap">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <Card link="/interactive/interactiveOne" title="Light Composition I" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/interactive/sculpture1.jpg' width={width} height={height}/>
         <Card link="/interactive/interactiveTwo" title="Girls got Rhythm" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/interactive/sculpture2-1.jpg' width={width} height={height}/>
         <Card link="/interactive/interactiveThree" title="Contoured Analytics" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/interactive/sculpture4.jpg' width={width} height={height}/>

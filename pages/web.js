@@ -11,7 +11,7 @@ export default function Web(){
         <title>Web Development and Design | Jonathan A Klein</title>
       </Head>
       <h1>Web Development and Design</h1>
-      <div className="flex justify-center item-stretch flex-wrap">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <Card link="/web/webOne" title="Reggie Red Bird Coloring" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/website1.jpg' width={width} height={height}/>
         <Card link="/web/webTwo" title="ISU Redbird Ball Catch Game" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/website2.jpg' width={width} height={height}/>
         <Card link="/web/webThree" title="ISU Redbird Matching Game" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/website3.jpg' width={width} height={height}/>
