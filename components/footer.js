@@ -23,7 +23,7 @@ function year(){
       <a href="https://twitter.com/zombiequinox" target="_blank" rel="nofollow"><IoLogoTwitter/></a>
       <a href="https://github.com/ZombiEquinox" target="_blank" rel="nofollow"><IoLogoGithub/></a>
       <a href="https://lnkd.in/4TxCZS" target="_blank" rel="nofollow"><IoLogoLinkedin/></a>
-      <a href="mailto:jonathan.klein@gmail.com"><IoMailOutline/></a>
+      <a href="mailto:jonathan.klein87@gmail.com"><IoMailOutline/></a>
       </div>
     </footer>
   )
