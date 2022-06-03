@@ -4,9 +4,9 @@ import Head from 'next/head';
 
 export default function Layout({children}){
   return(
-    <div>
+    <div id="page">
       <Head>
-        <link rel="icon" href="/images/favicon.ico" />
+        <link rel="icon" href="./images/favicon.ico" />
       </Head>
       <Menu/>
       <main className="container min-h-screen mx-auto px-4 py-4">

@@ -12,24 +12,24 @@ export default function Web(){
       </Head>
       <h1>Web Development and Design</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <Card link="/web/webOne" title="Reggie Red Bird Coloring" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/website1.jpg' width={width} height={height}/>
-        <Card link="/web/webTwo" title="ISU Redbird Ball Catch Game" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/website2.jpg' width={width} height={height}/>
-        <Card link="/web/webThree" title="ISU Redbird Matching Game" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/website3.jpg' width={width} height={height}/>
-        <Card link="/web/webFour" title="ISU Redbird Typing Game" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/website4.jpg' width={width} height={height}/>
-        <Card link="/web/webFive" title="ISU Association of Black Academic Employees" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/website9.jpg' width={width} height={height}/>
-        <Card link="/web/webSix" title="ISU Student Health Services" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/website20.jpg' width={width} height={height}/>
-        <Card link="/web/webSeven" title="Greater Peoria Works" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/greaterpeoriaworksthumb.png' width={width} height={height}/>
-        <Card link="/web/webEight" title="PixelPrediction" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/pixelpredictive-thumb.png' width={width} height={height}/>
-        <Card link="/web/webNine" title="Peoria Riverplex" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/riverplex-thumb.png' width={width} height={height}/>
-        <Card link="/web/webTen" title="Peoria Riverplex Mobile App" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/riverplex-app-thumb.png' width={width} height={height}/>
-        <Card link="/web/webEleven" title="CAT Connect" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/cat-conn-logo.svg' width={width} height={height}/>
-        <Card link="/web/webTwelve" title="Oak Lawn Estates" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/oaklawn-thumb.png' width={width} height={height}/>
-        <Card link="/web/webThirteen" title="AutonomouStuff" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/astuff_website.jpg' width={width} height={height}/>
-        <Card link="/web/webFourteen" title="AutonomouStuff Data Calculator" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/astuff_data_thumb.jpg' width={width} height={height}/>
-        <Card link="/web/webFifteen" title="Manitowoc Small Crawler Crane" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/home-manitowoc-crawler-crane.jpg'width={width} height={height}/>
-        <Card link="/web/webSixteen" title="1PURE CBD" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/onepurcbd-home.jpg.jpg'width={width} height={height}/>
-        <Card link="/web/webSeventeen" title="Potain Self-Erecting Crawler Crane" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/potain-home.jpg' width={width} height={height}/>
         <Card link="/web/webEighteen" title="Best Estimate Pro" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/bep.jpg' width={width} height={height}/>
+        <Card link="/web/webSeventeen" title="Potain Self-Erecting Crawler Crane" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/potain-home.jpg' width={width} height={height}/>
+        <Card link="/web/webSixteen" title="1PURE CBD" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/onepurcbd-home.jpg.jpg'width={width} height={height}/>
+        <Card link="/web/webFifteen" title="Manitowoc Small Crawler Crane" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/home-manitowoc-crawler-crane.jpg'width={width} height={height}/>
+        <Card link="/web/webFourteen" title="AutonomouStuff Data Calculator" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/astuff_data_thumb.jpg' width={width} height={height}/>
+        <Card link="/web/webThirteen" title="AutonomouStuff" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/astuff_website.jpg' width={width} height={height}/>
+        <Card link="/web/webTwelve" title="Oak Lawn Estates" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/oaklawn-thumb.png' width={width} height={height}/>
+        <Card link="/web/webEleven" title="CAT Connect" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/cat-conn-logo.svg' width={width} height={height}/>
+        <Card link="/web/webTen" title="Peoria Riverplex Mobile App" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/riverplex-app-thumb.png' width={width} height={height}/>
+        <Card link="/web/webNine" title="Peoria Riverplex" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/riverplex-thumb.png' width={width} height={height}/>
+        <Card link="/web/webEight" title="PixelPrediction" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/pixelpredictive-thumb.png' width={width} height={height}/>
+        <Card link="/web/webSeven" title="Greater Peoria Works" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/greaterpeoriaworksthumb.png' width={width} height={height}/>
+        <Card link="/web/webSix" title="ISU Student Health Services" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/website20.jpg' width={width} height={height}/>
+        <Card link="/web/webFive" title="ISU Association of Black Academic Employees" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/website9.jpg' width={width} height={height}/>
+        <Card link="/web/webFour" title="ISU Redbird Typing Game" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/website4.jpg' width={width} height={height}/>
+        <Card link="/web/webThree" title="ISU Redbird Matching Game" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/website3.jpg' width={width} height={height}/>
+        <Card link="/web/webTwo" title="ISU Redbird Ball Catch Game" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/website2.jpg' width={width} height={height}/>
+        <Card link="/web/webOne" title="Reggie Red Bird Coloring" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/website1.jpg' width={width} height={height}/>
       </div>
       <div>
         <h2>More Work</h2>
@@ -94,6 +94,9 @@ export default function Web(){
           <li><strong>Role:</strong> Senior Front-End Developer - Site Updates<br/><a href="https://www.geneticsandeyecare.com/">Genetics and Eyecare Today</a> - React</li>
           <li><strong>Role:</strong> Senior Front-End Developer - Site Updates<br/><a href="https://smartmouth.com/">Smart Mouth</a> - WordPress</li>
           <li><strong>Role:</strong> Senior Front-End Developer - Site Updates<br/><a href="https://www.infertile.com/">Infertility Center of St. Louis</a> - WordPress</li>
+          <li><strong>Role:</strong> Senior Front-End Developer - Site Updates/Animation/Email Templates<br/><a href="https://www.healthcarehighways.com/">Healthcare Highways</a> - Hubspot</li>
+          <li><strong>Role:</strong> Senior Front-End Developer - Site Updates/Email Templates<br/><a href="https://www.revelohealth.net/">Revelohealth</a> - Hubspot</li>
+          <li><strong>Role:</strong> Senior Front-End Developer - Web Development<br/><a href="https://www.reimaginecare.com/">Reimagine Care</a> - Webflow </li>
         </ul>
       </div>
     </Layout>
