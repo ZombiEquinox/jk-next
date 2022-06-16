@@ -8,7 +8,9 @@
   "dependencies": {
     "@tailwindcss/forms": "^0.3.4",
     "daisyui": "^1.16.2",
+    "hamburgers": "^1.2.1",
     "include-media": "^1.4.10",
+    "mburger-webcomponent": "^3.1.1",
     "mmenu-js": "^9.1.6",
     "next": "^12.1.6",
     "react": "^17.0.2",

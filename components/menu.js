@@ -7,18 +7,51 @@ export default function Menu(){
 
   const router = useRouter();
 
+
+
+  function toggleNav(){
+    let menuWidth = document.getElementById("myNav").offsetWidth;
+    let hamburger = document.querySelector('.hamburger');
+
+    hamburger.classList.toggle('is-active');
+
+
+    if(menuWidth > 0){
+      return closeNav();
+    } else{
+      return openNav();
+    }
+  }
+
   function closeNav(){
-    document.getElementById("myNav").style.display="none";
+    document.getElementById("myNav").style.width="0";
+    document.getElementById("page").style.marginRight = "0";
   }
 
   function openNav(){
-    document.getElementById("myNav").style.display="block";
+    document.getElementById("myNav").style.width="250px";
+    document.getElementById("page").style.marginRight="250px";
   }
+
+  
 
   return(
   <div className={style.menu}>
-    <div id="myNav" className={style.overlay}>
-      <a className={style.closebtn} onClick={closeNav}>&times;</a>
+    <header className="flex flex-row justify-between items-center">
+      <Link href="/"><a>
+        <Image 
+        src="https://jk-docs.s3.us-east-2.amazonaws.com/images/jk-Logo.png"
+        width={50}
+        height={33}
+        /></a>
+      </Link>
+    <button className="hamburger hamburger--spin" type="button"
+        aria-label="Menu" aria-controls="navigation" onClick={toggleNav}>
+  <span className="hamburger-box">
+    <span className="hamburger-inner"></span>
+  </span>
+</button>
+<div id="myNav" className={style.overlay}>
       <nav className={style.overlayContent}>
         <Link href="/"><a className={router.pathname == "/" ? `${style.active}` : ""}>Home</a></Link>
         <Link href="/web"><a className={router.pathname == "/web" ? `${style.active}` : ""}>Web Design and Development</a></Link>
@@ -30,15 +63,7 @@ export default function Menu(){
         <Link href="/about"><a className={router.pathname == "/about" ? `${style.active}` : ""}>About</a></Link>
       </nav>
     </div>
-    <header className="flex flex-row justify-between items-center">
-      <Link href="/"><a>
-        <Image 
-        src="https://jk-docs.s3.us-east-2.amazonaws.com/images/jk-Logo.png"
-        width={50}
-        height={33}
-        /></a>
-      </Link>
-    <span className={style.open} onClick={openNav}>&#9776;</span>
+
     </header>
 
   </div>

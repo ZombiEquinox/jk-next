@@ -5,9 +5,10 @@ import HomeHero from '../components/homehero'
 
 export default function LayoutHome({children}){
   return(
-    <div>
+    <div id="page">
       <Head>
         <link rel="icon" href="/images/favicon.ico" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Menu/>
       <HomeHero/>

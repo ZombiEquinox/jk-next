@@ -7,6 +7,7 @@ export default function Layout({children}){
     <div id="page">
       <Head>
         <link rel="icon" href="./images/favicon.ico" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Menu/>
       <main className="container min-h-screen mx-auto px-4 py-4">

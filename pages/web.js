@@ -12,6 +12,8 @@ export default function Web(){
       </Head>
       <h1>Web Development and Design</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <Card link="/web/webTwenty" title="Avaneer Health" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/avaneerhealth.jpg' width={width} height={height}/>
+        <Card link="/web/webNineteen" title="Reimagine Care" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/reimaginecare.jpg' width={width} height={height}/>
         <Card link="/web/webEighteen" title="Best Estimate Pro" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/bep.jpg' width={width} height={height}/>
         <Card link="/web/webSeventeen" title="Potain Self-Erecting Crawler Crane" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/potain-home.jpg' width={width} height={height}/>
         <Card link="/web/webSixteen" title="1PURE CBD" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/onepurcbd-home.jpg.jpg'width={width} height={height}/>
@@ -91,12 +93,13 @@ export default function Web(){
           <li><strong>Role:</strong> Senior Front-End Developer - Email Templates<br/>Bauch + Lomb</li>
           <li><strong>Role:</strong> Senior Front-End Developer - Email Templates<br/>Avellino</li>
           <li><strong>Role:</strong> Senior Front-End Developer - Email Templates<br/>Baxter</li>
-          <li><strong>Role:</strong> Senior Front-End Developer - Site Updates<br/><a href="https://www.geneticsandeyecare.com/">Genetics and Eyecare Today</a> - React</li>
+          <li><strong>Role:</strong> Senior Front-End Developer - Site Updates<br/>Baxter - Drupal</li>
+          <li><strong>Role:</strong> Senior Front-End Developer - Site Updates<br/><a href="https://www.geneticsandeyecare.com/">Genetics and Eyecare Today</a> - WordPress</li>
           <li><strong>Role:</strong> Senior Front-End Developer - Site Updates<br/><a href="https://smartmouth.com/">Smart Mouth</a> - WordPress</li>
           <li><strong>Role:</strong> Senior Front-End Developer - Site Updates<br/><a href="https://www.infertile.com/">Infertility Center of St. Louis</a> - WordPress</li>
           <li><strong>Role:</strong> Senior Front-End Developer - Site Updates/Animation/Email Templates<br/><a href="https://www.healthcarehighways.com/">Healthcare Highways</a> - Hubspot</li>
           <li><strong>Role:</strong> Senior Front-End Developer - Site Updates/Email Templates<br/><a href="https://www.revelohealth.net/">Revelohealth</a> - Hubspot</li>
-          <li><strong>Role:</strong> Senior Front-End Developer - Web Development<br/><a href="https://www.reimaginecare.com/">Reimagine Care</a> - Webflow </li>
+          <li><strong>Role:</strong> Senior Front-End Developer - Development<br/>American Giants - Webflow</li>          
         </ul>
       </div>
     </Layout>
