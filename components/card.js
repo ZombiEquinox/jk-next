@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function Card(props){
   return(
-    <div className="card shadow-xl image-full w-full m-2">
+    <div className="card shadow-xl image-full m-2">
       <figure>
         <Image src={props.img} width={props.width} height={props.height} layout="responsive" className="object-cover"/>
       </figure> 
@@ -11,7 +11,7 @@ export default function Card(props){
         <Link href={props.link}><h2 className="card-title">{props.title}</h2></Link>
         <p>{props.description}</p> 
         <div className="card-actions">
-          <Link href={props.link}><a className="btn btn-primary rounded-lg">{props.text}</a></Link>  
+          <Link href={props.link}><a className="btn btn-primary rounded-lg prose-stone hover:prose-stone">{props.text}</a></Link>  
         </div>
       </div>
     </div>

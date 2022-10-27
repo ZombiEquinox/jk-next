@@ -28,7 +28,7 @@ p{
 
 a{
   color: $secondary;
-  &:hover{
+  &:hover:not(.btn){
     transition: all .3s ease-in-out;
     color: #539784;
   }
