@@ -8,7 +8,7 @@ export default function LayoutHome({children}){
   return(
     <div id="page">
       <Head>
-        <link rel="icon" href="/images/favicon.ico" />
+        <link rel="icon" href="favicon.ico" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <main className='drawer drawer-end'>

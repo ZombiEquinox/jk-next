@@ -9,21 +9,21 @@ function year(){
 }
 
   return(
-    <footer className={style.footer}>
+    <footer className={`${style.footer} flex flex-col md:flex-row gap-4 justify-between items-center p-1`}>
       <div className={style.copyright}>
         &copy;{year()} <Link href="/">JonathanAKlein.com</Link>
       </div>
       <div>
         <Link href="/myMess">Excuse My Mess</Link>
       </div>
-      <div className={style.social}>
-      <a href="https://steamcommunity.com/id/zombiequinox/" target="_blank" rel="nofollow"><IoLogoSteam height={32} width={32}/></a>
-      <a href="https://live.xbox.com/en-US/Profile?gamertag=zombiequinox" target="_blank" rel="nofollow"><IoLogoXbox/></a>
-      <a href="https://psnprofiles.com/MrSandman87" target="_blank" rel="nofollow"><IoLogoPlaystation/></a>
-      <a href="https://twitter.com/zombiequinox" target="_blank" rel="nofollow"><IoLogoTwitter/></a>
-      <a href="https://github.com/ZombiEquinox" target="_blank" rel="nofollow"><IoLogoGithub/></a>
-      <a href="https://lnkd.in/4TxCZS" target="_blank" rel="nofollow"><IoLogoLinkedin/></a>
-      <a href="mailto:jonathan.klein87@gmail.com"><IoMailOutline/></a>
+      <div className={`${style.social} md:w-auto w-full`}>
+      <Link href="https://steamcommunity.com/id/zombiequinox/" target="_blank" rel="nofollow"><IoLogoSteam height={32} width={32}/></Link>
+      <Link href="https://live.xbox.com/en-US/Profile?gamertag=zombiequinox" target="_blank" rel="nofollow"><IoLogoXbox/></Link>
+      <Link href="https://psnprofiles.com/MrSandman87" target="_blank" rel="nofollow"><IoLogoPlaystation/></Link>
+      <Link href="https://twitter.com/zombiequinox" target="_blank" rel="nofollow"><IoLogoTwitter/></Link>
+      <Link href="https://github.com/ZombiEquinox" target="_blank" rel="nofollow"><IoLogoGithub/></Link>
+      <Link href="https://lnkd.in/4TxCZS" target="_blank" rel="nofollow"><IoLogoLinkedin/></Link>
+      <Link href="mailto:jonathan.klein87@gmail.com"><IoMailOutline/></Link>
       </div>
     </footer>
   )

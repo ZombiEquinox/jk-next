@@ -1,12 +1,5 @@
 @import 'styles/variables';
 
-.footer{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  color: $white;
   .social{
     display: flex;
     flex-direction: row;
@@ -20,16 +13,4 @@
       fill: $white;
     }
   }
-}
 
-@media screen and (max-width: 640px){
-  .footer{
-    flex-direction: column;
-    .copyright{
-      margin-bottom: 1.5rem;
-    }
-    .social{
-      width: 100%;
-    }
-  }
-}

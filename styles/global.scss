@@ -36,6 +36,33 @@ width: 100%;
 height: 100%;
 }
 
+/** menu */
+.drawer-side .menu {
+  background-color: $primary;
+  a{
+    padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+  &:hover{
+    color: #818181;
+  }
+  &.active{
+    color: $secondary;
+  }
+  }
+  .closebtn{
+    position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  }
+}
+
+/** Home Page Styles */
 .home-hero{
   margin-top: -91.5px;
   .photo-area{
@@ -51,5 +78,8 @@ height: 100%;
     .hero-container{
       padding-top: 91.5px;
     }
+    .photo-area{
+    background-position: center -195px;
+  }
   }
 }
