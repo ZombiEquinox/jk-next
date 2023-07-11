@@ -5,24 +5,24 @@ import Head from 'next/head';
 import HomeHero from '../components/homehero'
 
 export default function LayoutHome({children}){
-  return(
+  return (
     <div id="page">
       <Head>
         <link rel="icon" href="favicon.ico" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <main className='drawer drawer-end'>
-         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" /> 
-        <div className='drawer-content'>
-        <Menu/>
-        <HomeHero/>
-        <div className="container min-h-screen mx-auto px-4 py-4 drawer">
-          {children}          
-        </div>        
-        <Footer/>
+      <main className="drawer drawer-end">
+        <input id="jk-drawer" type="checkbox" className="drawer-toggle" />
+        <div className="drawer-content flex flex-col">
+          <Menu />
+          <HomeHero />
+          <div className="container min-h-screen mx-auto px-4 py-4 drawer">
+            {children}
+          </div>
+          <Footer />
         </div>
-        <Drawer/>
+        <Drawer />
       </main>
     </div>
-  )
+  );
 }

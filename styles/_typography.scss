@@ -5,7 +5,7 @@ h4,
 h5,
 h6,
 p {
-  color: $white;
+  @apply text-white;
 }
 
 h1{
@@ -27,7 +27,7 @@ p{
 }
 
 a{
-  color: $secondary;
+  @apply text-pastel-green;
   &:hover:not(.btn){
     transition: all .3s ease-in-out;
     color: #539784;
@@ -36,9 +36,9 @@ a{
 
 ul{
   li{
+    @apply text-white;
     list-style: disc;
     margin-left: 1rem;
-    color: $white;
   }
 }
 

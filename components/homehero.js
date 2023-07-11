@@ -1,4 +1,3 @@
-import style from './homehero.module.scss'
 import Link from 'next/link'
 
 export default function HomeHero(){

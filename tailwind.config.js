@@ -1,3 +1,4 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   mode: "jit",
   purge: [
@@ -34,11 +35,21 @@ module.exports = {
           800: "#1E9C45",
           900: "#156D30",
         },
+        "light-yellow": {
+          DEFAULT: "F4F8C2",
+          50: "#FEFFFC",
+          100: "#FEFEF9",
+          200: "#FCFDF0",
+          300: "#FBFCE7",
+          400: "#F7FAD4",
+          500: "#F4F8C2",
+          600: "#DCDFAF",
+          700: "#929574",
+          800: "#6E7057",
+          900: "#494A3A",
+        },
       },
     },
-  },
-  variants: {
-    extend: {},
   },
   plugins: [require("daisyui"), require("@tailwindcss/typography")],
   daisyui: {
@@ -46,8 +57,8 @@ module.exports = {
     themes: [
       {
         jk: {
-          primary: "#4D4C6D" /* Primary color */,
-          "primary-focus": "#3c2f46" /* Primary color - focused */,
+          primary: "#3c2f46" /* Primary color */,
+          "primary-focus": "#4D4C6D" /* Primary color - focused */,
           "primary-content":
             "#ffffff" /* Foreground content color to use on primary color */,
 

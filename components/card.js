@@ -36,6 +36,7 @@ const onLeave = ({ currentTarget }) => {
           height={props.height}
           layout="responsive"
           className="object-cover"
+          loading='lazy'
         />
       </figure>
       <div className="justify-center items-center card-body">
@@ -45,7 +46,7 @@ const onLeave = ({ currentTarget }) => {
         <p>{props.description}</p>
         <div className="card-actions">
           <Link href={props.link} 
-              className="btn btn-primary rounded-lg prose-stone hover:prose-stone"
+              className="btn btn-primary rounded-lg prose-stone hover:prose-stone card-actions"
             >
               {props.text}
           </Link>

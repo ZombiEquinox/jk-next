@@ -12,8 +12,8 @@ export default function GraphDesign(){
       </Head>
       <h1>Graphic Design</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <Card link="/graphic_design/designOne" title="InSanity" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/graphic_design/graphicdesign1.jpg' width={width} height={height}/>
-        <Card link="/graphic_design/designTwo" title="Art" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/graphic_design/graphicdesign2.jpg' width={width} height={height}/>
+        <Card link="/graphic_design/designOne" title="InSanity" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/graphic_design/graphicdesign1.jpg'/>
+        <Card link="/graphic_design/designTwo" title="Art" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/graphic_design/graphicdesign2.jpg'/>
         <Card link="/graphic_design/designThree" title="Illinois Central College ID Card Design" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/graphic_design/graphicdesign4.png' width={width} height={height}/>
         <Card link="/graphic_design/designFour" title="End Fat Talk Marquee" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/graphic_design/graphicdesign16.png' width={width} height={height}/>
         <Card link="/graphic_design/designFive" title="Operation Beautiful Marquee" text="View Description" img='https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/graphic_design/graphicdesign17.png' width={width} height={height}/>
