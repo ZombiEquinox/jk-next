@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function Menu(){
 
   return (
-    <div className="navbar justify-between sticky top-0 bg-primary px-4">
+    <div className="navbar justify-between sticky top-0 bg-primary px-4 z-50">
       <div className="">
         <Link href="/">
           <Image

@@ -17,7 +17,7 @@ export default function webEighteen(){
         <p><strong>Platform:</strong> WordPress</p>
         <p><strong>URL:</strong> <a href="https://avaneerhealth.com/">https://avaneerhealth.com/</a></p>
         <p></p>
-        <Image src='https://jk-docs.s3.us-east-2.amazonaws.com/images/web/avaneerhealth.png' width="1903px" height="5702px" />                       
+        <Image src='https://jk-docs.s3.us-east-2.amazonaws.com/images/web/avaneerhealth.png' width={1903} height={5702} />                       
       </div>
     </Layout>
   )

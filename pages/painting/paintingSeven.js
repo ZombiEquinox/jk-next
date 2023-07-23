@@ -13,7 +13,7 @@ export default function paintingSeven(){
       <div>
         <h1>Nude Study Painting</h1>
         <p>A nude study I painting on a ceiling tile. I wanted it the be bland, but exciting. I stuck to earth tones to give it the "I see these colors every day" feel. So it would be ignored. but also give the feeling of something is there, to make the viewer stop and stare.</p>
-        <Image src="https://jk-docs.s3.us-east-2.amazonaws.com/images/painting/tpainting10.jpg" width="453px" height="604px" />
+        <Image src="https://jk-docs.s3.us-east-2.amazonaws.com/images/painting/tpainting10.jpg" width={453} height={604} />
       </div>
     </Layout>
   )

@@ -13,7 +13,7 @@ export default function paintingFour(){
       <div>
         <h1>A knot isn't always a Knot</h1>
         <p>A painting a did of a simple knot.</p>
-        <Image src="https://jk-docs.s3.us-east-2.amazonaws.com/images/painting/tpainting4.jpg" width="453px" height="604px" />
+        <Image src="https://jk-docs.s3.us-east-2.amazonaws.com/images/painting/tpainting4.jpg" width={453} height={604} />
       </div>
     </Layout>
   )

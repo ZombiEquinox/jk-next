@@ -13,7 +13,7 @@ export default function paintingSix(){
       <div>
         <h1>V for Vendetta - Guy Fawk Abstract Painting</h1>
         <p>V for vendetta is an amazing movie, has some very valid points that to this day are becomeing more and more true. I wanted something that was abstract, but captured the iconography of the movie.</p>
-        <Image src="https://jk-docs.s3.us-east-2.amazonaws.com/images/painting/tpainting9.jpg" width="453px" height="604px" />
+        <Image src="https://jk-docs.s3.us-east-2.amazonaws.com/images/painting/tpainting9.jpg" width={453} height={604} />
       </div>
     </Layout>
   )

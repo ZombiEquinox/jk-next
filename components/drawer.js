@@ -8,7 +8,7 @@ export default function Drawer(){
   return (
     <div className="drawer-side">
       <label htmlFor="jk-drawer" className="drawer-overlay"></label>
-      <nav className="menu p-4 w-80 h-full bg-base-200">
+      <nav className="menu p-4 pt-16 w-80 h-full bg-base-200 z-50">
         <Link href="/">
             Home
         </Link>

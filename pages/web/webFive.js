@@ -17,7 +17,7 @@ export default function webFive(){
         <p><strong>URL:</strong> <a href="http://abae.illinoisstate.edu/">http://abae.illinoisstate.edu/</a></p>
         <p><small><strong>Note:</strong> Site has since gone under a minor redesign</small></p>
         <p>First Site I did at ISU, I designed the overlay on the carousel. The layout is a standard Illinois State University Layout</p>
-        <Image src='https://jk-docs.s3.us-east-2.amazonaws.com/images/web/ABAE.jpg' width="955px" height="492px" />        
+        <Image src='https://jk-docs.s3.us-east-2.amazonaws.com/images/web/ABAE.jpg' width={955} height={492} />        
       </div>
     </Layout>
   )

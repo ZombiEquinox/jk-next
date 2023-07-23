@@ -17,7 +17,7 @@ export default function webSix(){
         <p><strong>URL:</strong> <a href="http://healthservices.illinoisstate.edu/">http://healthservices.illinoisstate.edu/</a></p>
         <p><small><strong>Note:</strong> Site has since gone under a minor redesign</small></p>
         <p>Health Services was a collaborative effort between me and another designer. I Designed the graphic behind the Hours section and did some minor developing on the site, while she did the rest of the development work.</p>
-        <Image src='https://jk-docs.s3.us-east-2.amazonaws.com/images/web/StudentHealth.jpg' width="1504px" height="857px" />
+        <Image src='https://jk-docs.s3.us-east-2.amazonaws.com/images/web/StudentHealth.jpg' width={1504} height={857} />
         
       </div>
     </Layout>

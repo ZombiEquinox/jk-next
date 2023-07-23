@@ -13,7 +13,7 @@ export default function drawingTen(){
       <div>
         <h1>Contour Nude Study</h1>
         <p>A quick nude study done in contour line drawing.</p>
-        <Image src="https://jk-docs.s3.us-east-2.amazonaws.com/images/drawing/drawing13.jpg" width="604px" height="453px" />
+        <Image src="https://jk-docs.s3.us-east-2.amazonaws.com/images/drawing/drawing13.jpg" width={604} height={453} />
       </div>
     </Layout>
   )

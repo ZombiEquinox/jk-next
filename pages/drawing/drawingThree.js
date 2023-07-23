@@ -13,7 +13,7 @@ export default function drawingThree(){
       <div>
         <h1>Ribcage Study</h1>
         <p>This is your standard study of a ribcage and pelvis.</p>
-        <Image src="https://jk-docs.s3.us-east-2.amazonaws.com/images/drawing/drawing2.jpg" width="453px" height="604px" />
+        <Image src="https://jk-docs.s3.us-east-2.amazonaws.com/images/drawing/drawing2.jpg" width={453} height={604} />
       </div>
     </Layout>
   )

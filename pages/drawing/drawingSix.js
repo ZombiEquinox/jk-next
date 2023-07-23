@@ -13,7 +13,7 @@ export default function drawingSix(){
       <div>
         <h1>Nude Study 2</h1>
         <p>The angle I drew from was difficult, and it took several attempts to get this view perfect. I loved this one because of the detail in her hair and pillow. The shading shows the detail in her body</p>
-        <Image src="https://jk-docs.s3.us-east-2.amazonaws.com/images/drawing/drawing8.jpg" width="604px" height="453px" />
+        <Image src="https://jk-docs.s3.us-east-2.amazonaws.com/images/drawing/drawing8.jpg" width={604} height={453} />
       </div>
     </Layout>
   )

@@ -16,9 +16,9 @@ export default function webSixteen(){
         <p><strong>Position:</strong> Web Developer</p>
         <p><strong>URL:</strong> <a href="https://www.1purecbd.com/">https://www.1purecbd.com/</a></p>
         <p></p>
-        <Image src='https://jk-docs.s3.us-east-2.amazonaws.com/images/web/onepurcbd-home.jpg' width="952px" height="3114px" />
+        <Image src='https://jk-docs.s3.us-east-2.amazonaws.com/images/web/onepurcbd-home.jpg' width={952} height={3114} />
         <p>Product Page</p>                  
-        <Image src='https://jk-docs.s3.us-east-2.amazonaws.com/images/web/onepurcbd-product.jpg' width="952px" height="1683px" />                         
+        <Image src='https://jk-docs.s3.us-east-2.amazonaws.com/images/web/onepurcbd-product.jpg' width={952} height={1683} />                         
       </div>
     </Layout>
   )

@@ -16,9 +16,9 @@ export default function webFifteen(){
         <p><strong>Position:</strong> Web Developer</p>
         <p><strong>URL:</strong> <a href="https://crawlercranes.manitowoc.com/">https://crawlercranes.manitowoc.com/</a></p>
         <p></p>
-        <Image src='https://jk-docs.s3.us-east-2.amazonaws.com/images/web/home-manitowoc-crawler-crane.jpg' width="931px" height="2730px" />
+        <Image src='https://jk-docs.s3.us-east-2.amazonaws.com/images/web/home-manitowoc-crawler-crane.jpg' width={931} height={2730} />
         <p>Blog Post</p>                  
-        <Image src='https://jk-docs.s3.us-east-2.amazonaws.com/images/web/manitowoc-crawler-crane.jpg' width="931px" height="1584px" />                         
+        <Image src='https://jk-docs.s3.us-east-2.amazonaws.com/images/web/manitowoc-crawler-crane.jpg' width={931} height={1584} />                         
       </div>
     </Layout>
   )

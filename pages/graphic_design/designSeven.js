@@ -16,7 +16,7 @@ export default function designSeven(){
         <p><strong>Company:</strong> Illinois State University - Web &amp; Interactive Communications</p>
         <p><strong>Position:</strong> Front End Developer/Graphic Designer Intern</p>
         <p>Career center marquee image I designed, taking a standard resume that someone would fill out for a job and ripping it up, to reveal the Hire-A-Redbird program that helps students and employers find the right place for them</p>
-         <Image src="https://jk-docs.s3.us-east-2.amazonaws.com/images/graphic_design/graphicdesign11.jpg" width="640px" height="270px" />
+         <Image src="https://jk-docs.s3.us-east-2.amazonaws.com/images/graphic_design/graphicdesign11.jpg" width={640} height={270} />
       </div>
     </Layout>
   )

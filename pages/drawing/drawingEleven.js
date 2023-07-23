@@ -13,7 +13,7 @@ export default function drawingEleven(){
       <div>
         <h1>Human Study 2</h1>
         <p>Another Study of the human body.</p>
-        <Image src="https://jk-docs.s3.us-east-2.amazonaws.com/images/drawing/drawing15.jpg" width="453px" height="604px" />
+        <Image src="https://jk-docs.s3.us-east-2.amazonaws.com/images/drawing/drawing15.jpg" width={453} height={604} />
       </div>
     </Layout>
   )

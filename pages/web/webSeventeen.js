@@ -16,7 +16,7 @@ export default function webSeventeen(){
         <p><strong>Position:</strong> Web Developer</p>
         <p><strong>URL:</strong> <a href="https://www.potainbuildbetter.com/">https://www.potainbuildbetter.com/</a></p>
         <p></p>
-        <Image src='https://jk-docs.s3.us-east-2.amazonaws.com/images/web/potain-home.jpg' width="952px" height="1991px" />                       
+        <Image src='https://jk-docs.s3.us-east-2.amazonaws.com/images/web/potain-home.jpg' width={952} height={1991} />                       
       </div>
     </Layout>
   )

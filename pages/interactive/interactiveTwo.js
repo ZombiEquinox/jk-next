@@ -14,16 +14,16 @@ export default function interactiveTwo(){
         <h1>Girls got Rhythm</h1>
         <p>Controlled by an arduino and motors, this "instrument" creates it's own music, keeping a beat, and playing "notes". When presented it was accompanied by Avenged Sevenfold, then Other Music, while no two songs were alike, it kept the beat and started to "play" along. The idea behind it is music is a universal language. While some don't interpret the same song the same way, we all hear or feel it the same. this way meant to allow the listener to hear it's music, and allow them to make sense of how they hear it.</p>
 <div className="iframeContainer"><iframe src="//player.vimeo.com/video/36628708" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen="" width="500" height="281" frameBorder="0"></iframe></div>
-        <Image src="https://jk-docs.s3.us-east-2.amazonaws.com/images/interactive/sculpture2-1.jpg" width="604px" height="453px" />
-        <Image src="https://jk-docs.s3.us-east-2.amazonaws.com/images/interactive/sculpture2-2.jpg" width="604px" height="453px" />
-        <Image src="https://jk-docs.s3.us-east-2.amazonaws.com/images/interactive/sculpture2-3.jpg" width="604px" height="453px" />
-        <Image src="https://jk-docs.s3.us-east-2.amazonaws.com/images/interactive/sculpture2-4.jpg" width="604px" height="453px" />
-        <Image src="https://jk-docs.s3.us-east-2.amazonaws.com/images/interactive/sculpture2-5.jpg" width="604px" height="453px" />
-        <Image src="https://jk-docs.s3.us-east-2.amazonaws.com/images/interactive/sculpture2-6.jpg" width="604px" height="453px" />
-        <Image src="https://jk-docs.s3.us-east-2.amazonaws.com/images/interactive/sculpture2-7.jpg" width="604px" height="453px" />
-        <Image src="https://jk-docs.s3.us-east-2.amazonaws.com/images/interactive/sculpture2-8.jpg" width="604px" height="453px" />
-        <Image src="https://jk-docs.s3.us-east-2.amazonaws.com/images/interactive/sculpture2-9.jpg" width="604px" height="453px" />
-        <Image src="https://jk-docs.s3.us-east-2.amazonaws.com/images/interactive/sculpture2-10.jpg" width="604px" height="453px" />
+        <Image src="https://jk-docs.s3.us-east-2.amazonaws.com/images/interactive/sculpture2-1.jpg" width={604} height={453} />
+        <Image src="https://jk-docs.s3.us-east-2.amazonaws.com/images/interactive/sculpture2-2.jpg" width={604} height={453} />
+        <Image src="https://jk-docs.s3.us-east-2.amazonaws.com/images/interactive/sculpture2-3.jpg" width={604} height={453} />
+        <Image src="https://jk-docs.s3.us-east-2.amazonaws.com/images/interactive/sculpture2-4.jpg" width={604} height={453} />
+        <Image src="https://jk-docs.s3.us-east-2.amazonaws.com/images/interactive/sculpture2-5.jpg" width={604} height={453} />
+        <Image src="https://jk-docs.s3.us-east-2.amazonaws.com/images/interactive/sculpture2-6.jpg" width={604} height={453} />
+        <Image src="https://jk-docs.s3.us-east-2.amazonaws.com/images/interactive/sculpture2-7.jpg" width={604} height={453} />
+        <Image src="https://jk-docs.s3.us-east-2.amazonaws.com/images/interactive/sculpture2-8.jpg" width={604} height={453} />
+        <Image src="https://jk-docs.s3.us-east-2.amazonaws.com/images/interactive/sculpture2-9.jpg" width={604} height={453} />
+        <Image src="https://jk-docs.s3.us-east-2.amazonaws.com/images/interactive/sculpture2-10.jpg" width={604} height={453} />
       </div>
     </Layout>
   )

@@ -13,7 +13,7 @@ export default function drawingEight(){
       <div>
         <h1>Human Study 1</h1>
         <p>One of my most complex peices, I spend too much time on the folds of the clothing, but in the end I got a majority of the results I wanted.</p>
-        <Image src="https://jk-docs.s3.us-east-2.amazonaws.com/images/drawing/drawing11.jpg" width="453px" height="604px" />
+        <Image src="https://jk-docs.s3.us-east-2.amazonaws.com/images/drawing/drawing11.jpg" width={53} height={604} />
       </div>
     </Layout>
   )

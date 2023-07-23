@@ -13,7 +13,7 @@ export default function paintingTwo(){
       <div>
         <h1>Abstract Painting</h1>
         <p>Part of my small abstract series, tried a few paint drip effects. </p>        
-        <Image src="https://jk-docs.s3.us-east-2.amazonaws.com/images/painting/tpainting2.jpg" width="604px" height="453px" />
+        <Image src="https://jk-docs.s3.us-east-2.amazonaws.com/images/painting/tpainting2.jpg" width={604} height={453} />
       </div>
     </Layout>
   )

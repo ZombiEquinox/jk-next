@@ -17,7 +17,7 @@ export default function webEighteen(){
         <p><strong>Platform:</strong> Webflow</p>
         <p><strong>URL:</strong> <a href="https://www.reimaginecare.com/">https://www.reimaginecare.com/</a></p>
         <p></p>
-        <Image src='https://jk-docs.s3.us-east-2.amazonaws.com/images/web/reimaginecare.png' width="1903px" height="5702px" />                       
+        <Image src='https://jk-docs.s3.us-east-2.amazonaws.com/images/web/reimaginecare.png' width={1903} height={5702} />                       
       </div>
     </Layout>
   )

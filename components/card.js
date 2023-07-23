@@ -4,29 +4,7 @@ import { useEffect, useRef } from 'react';
 import { gsap } from "gsap";
 
 export default function Card(props){
-const onEnter = ({ currentTarget }) => {
-  gsap.to(currentTarget, { backgroundColor: "#7CE69D",color:"#000" });
-};
 
-const onLeave = ({ currentTarget }) => {
-  gsap.to(currentTarget, { backgroundColor: "#4D4C6D", color:"#fff" });
-};
-
-    const comp = useRef();
-
-  useEffect(()=>{
-    const ctx = gsap.context(() => {
-      // Target the two specific elements we have asigned the animate class
-      gsap.to(".card-actions", {
-        y: 100,
-        repeat: -1,
-        repeatDelay: 1,
-        yoyo: true
-      });
-    }, comp);// <- Scope!
-    
-    return () => ctx.revert();
-  }, []);
   return (
     <div className="card shadow-xl image-full m-2">
       <figure>
@@ -34,7 +12,7 @@ const onLeave = ({ currentTarget }) => {
           src={props.img}
           width={props.width}
           height={props.height}
-          layout="responsive"
+          alt={props.title}
           className="object-cover"
           loading='lazy'
         />

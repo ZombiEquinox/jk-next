@@ -17,7 +17,7 @@ export default function webTwo(){
         <p><strong>URL:</strong> Website no longer available</p>
         <p><small><strong>Note:</strong> Game no longer available on website</small></p>
         <p>Another game I developed for Illinois State University's Kids Club. Using the W, A, S, D keys on the keyboard the user has 35 seconds to pick up the football as many times as they can. Once time is up they can either play again or cancel. The goal is to allow users to experience gaming on a PC using the W,A,S,D keys and for them to see if they can beat their last score. A stretch goal was the put a leaderboard or a last score on the board, but due to time contrainst I was unable to add it into the game.</p>
-        <Image src='https://jk-docs.s3.us-east-2.amazonaws.com/images/web/website2-1.jpg' width="955px" height="492px" />
+        <Image src='https://jk-docs.s3.us-east-2.amazonaws.com/images/web/website2-1.jpg' width={955} height={492} />
         
         
       </div>

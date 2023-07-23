@@ -17,7 +17,7 @@ export default function webFour(){
         <p><strong>URL:</strong> Website No longer available</p>
         <p><small><strong>Note:</strong> Game no longer available on website</small></p>
         <p>A game for children to get used to typing on a computer. The user will select their difficulty and start typing, the harder the difficulty the harder and longer the words become. There is also a secret mode that I inserted that used video game characters and changes the coloring of the game.</p>
-        <Image src='https://jk-docs.s3.us-east-2.amazonaws.com/images/web/website4-1.jpg' width="955px" height="492px" />
+        <Image src='https://jk-docs.s3.us-east-2.amazonaws.com/images/web/website4-1.jpg' width={955} height={492} />
         
         
       </div>
