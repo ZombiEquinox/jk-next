@@ -1,7 +1,7 @@
 import Layout from '../../components/layout'
 import Head from 'next/head'
-
 import Link from 'next/link'
+import BackButton from "../../components/BackBtn";
 
 export default function videoSeven(){
   return(
@@ -9,7 +9,7 @@ export default function videoSeven(){
       <Head>
         <title>AutonomouStuff PACMod Systems | Jonathan A Klein</title>
       </Head>
-      <Link href="/video">&lt; Back</Link>
+      <BackButton/>
       <div>
         <h1>AutonomouStuff PACMod Systems</h1>
         <p><strong>Company:</strong> AutonomouStuff</p>

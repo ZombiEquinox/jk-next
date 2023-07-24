@@ -5,7 +5,7 @@ h4,
 h5,
 h6,
 p {
-  color: $white;
+  @apply text-white;
 }
 
 h1{
@@ -26,18 +26,18 @@ p{
   line-height: 1.5;
 }
 
-a{
-  color: $secondary;
-  &:hover{
-    transition: all .3s ease-in-out;
-    color: #539784;
-  }
-}
+
 
 ul{
   li{
+    @apply text-white;
     list-style: disc;
     margin-left: 1rem;
-    color: $white;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  h1{
+    font-size: 45px;
   }
 }

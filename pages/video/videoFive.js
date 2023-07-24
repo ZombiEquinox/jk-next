@@ -1,7 +1,7 @@
 import Layout from '../../components/layout'
 import Head from 'next/head'
-
 import Link from 'next/link'
+import BackButton from "../../components/BackBtn";
 
 export default function videoFive(){
   return(
@@ -9,7 +9,7 @@ export default function videoFive(){
       <Head>
         <title>Conklin's Barn II Dinner &amp; Theatre, History in Central Illinois | Jonathan A Klein</title>
       </Head>
-      <Link href="/video">&lt; Back</Link>
+      <BackButton/>
       <div>
         <h1>Conklin's Barn II Dinner &amp; Theatre, History in Central Illinois</h1>
         <p><strong>Position:</strong> Illinois State University Student</p>

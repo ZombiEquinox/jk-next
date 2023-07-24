@@ -1,7 +1,7 @@
 import Layout from '../../components/layout'
 import Head from 'next/head'
-
 import Link from 'next/link'
+import BackButton from "../../components/BackBtn";
 
 export default function videoThree(){
   return(
@@ -9,7 +9,7 @@ export default function videoThree(){
       <Head>
         <title>Ari, the 5 Year old Minecraft Player | Jonathan A Klein</title>
       </Head>
-      <Link href="/video">&lt; Back</Link>
+      <BackButton/>
       <div>
         <h1>Ari, the 5 Year old Minecraft Player</h1>
         <p><strong>Position:</strong> Illinois State University Student</p>

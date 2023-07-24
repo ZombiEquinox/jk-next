@@ -1,19 +1,36 @@
 import Link from 'next/link';
-import Image from 'next/image'
+import Image from 'next/image';
+import { useEffect, useRef } from 'react';
+import { gsap } from "gsap";
 
 export default function Card(props){
-  return(
-    <div className="card shadow-xl image-full w-full m-2">
+
+  return (
+    <div className="card bg-base-100 shadow-xl image-full w-96 m-2">
       <figure>
-        <Image src={props.img} width={props.width} height={props.height} layout="responsive" className="object-cover"/>
-      </figure> 
+        <Image
+          src={props.img}
+          width={props.width}
+          height={props.height}
+          alt={props.title}
+          className="object-cover"
+          loading="lazy"
+        />
+      </figure>
       <div className="justify-center items-center card-body">
-        <Link href={props.link}><h2 className="card-title">{props.title}</h2></Link>
-        <p>{props.description}</p> 
+        <Link href={props.link}>
+          <p className="card-title">{props.title}</p>
+        </Link>
+        <p>{props.description}</p>
         <div className="card-actions">
-          <Link href={props.link}><a className="btn btn-primary rounded-lg">{props.text}</a></Link>  
+          <Link
+            href={props.link}
+            className="btn btn-primary rounded-lg prose-stone hover:prose-stone"
+          >
+            {props.text}
+          </Link>
         </div>
       </div>
     </div>
-  )
+  );
 }

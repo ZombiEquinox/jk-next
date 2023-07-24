@@ -1,6 +1,7 @@
 import Layout from '../../components/layout'
 import Head from 'next/head'
 import Link from 'next/link'
+import BackButton from "../../components/BackBtn";
 
 export default function videoOne(){
   return(
@@ -8,7 +9,7 @@ export default function videoOne(){
       <Head>
         <title>1min Arduino Commercial | Jonathan A Klein</title>
       </Head>
-      <Link href="/video">&lt; Back</Link>
+      <BackButton/>
       <div>
         <h1>1min Arduino Commercial</h1>
         <p><strong>Position:</strong> Illinois State University Student</p>
