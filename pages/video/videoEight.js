@@ -1,7 +1,7 @@
 import Layout from '../../components/layout'
 import Head from 'next/head'
-
 import Link from 'next/link'
+import BackButton from "../../components/BackBtn";
 
 export default function videoEight(){
   return(
@@ -9,7 +9,7 @@ export default function videoEight(){
       <Head>
         <title>AutonomouStuff Open Autonomy Pilot | Jonathan A Klein</title>
       </Head>
-      <Link href="/video">&lt; Back</Link>
+      <BackButton/>
       <div>
         <h1>AutonomouStuff Open Autonomy Pilot</h1>
         <p><strong>Company:</strong> AutonomouStuff</p>

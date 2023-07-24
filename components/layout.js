@@ -7,14 +7,15 @@ export default function Layout({children}){
   return (
     <div id="page">
       <Head>
-        <link rel="icon" href="/images/favicon.ico" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <main className="drawer drawer-end">
         <input id="jk-drawer" type="checkbox" className="drawer-toggle" />
-        <div className="drawer-content flex flex-col">
+        <div className="drawer-content flex flex-col h-full">
           <Menu />
-          <div className="container mx-auto">{children}</div>
+          <div className="container min-h-[calc(100vh-180px)] md:min-h-[calc(100vh-126px)] px-4 mx-auto">
+            {children}
+          </div>
           <Footer />
         </div>
         <Drawer />

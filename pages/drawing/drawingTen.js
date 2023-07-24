@@ -2,6 +2,7 @@ import Layout from '../../components/layout'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import BackButton from "../../components/BackBtn";
 
 export default function drawingTen(){
   return(
@@ -9,7 +10,7 @@ export default function drawingTen(){
       <Head>
         <title>Contour Nude Study | Jonathan A Klein</title>
       </Head>
-      <Link href="/drawing">&lt; Back</Link>
+      <BackButton/>
       <div>
         <h1>Contour Nude Study</h1>
         <p>A quick nude study done in contour line drawing.</p>

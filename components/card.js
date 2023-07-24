@@ -6,7 +6,7 @@ import { gsap } from "gsap";
 export default function Card(props){
 
   return (
-    <div className="card shadow-xl image-full m-2">
+    <div className="card bg-base-100 shadow-xl image-full w-96 m-2">
       <figure>
         <Image
           src={props.img}
@@ -14,19 +14,20 @@ export default function Card(props){
           height={props.height}
           alt={props.title}
           className="object-cover"
-          loading='lazy'
+          loading="lazy"
         />
       </figure>
       <div className="justify-center items-center card-body">
         <Link href={props.link}>
-          <h2 className="card-title">{props.title}</h2>
+          <p className="card-title">{props.title}</p>
         </Link>
         <p>{props.description}</p>
         <div className="card-actions">
-          <Link href={props.link} 
-              className="btn btn-primary rounded-lg prose-stone hover:prose-stone card-actions"
-            >
-              {props.text}
+          <Link
+            href={props.link}
+            className="btn btn-primary rounded-lg prose-stone hover:prose-stone"
+          >
+            {props.text}
           </Link>
         </div>
       </div>

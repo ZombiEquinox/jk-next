@@ -2,6 +2,7 @@ import Layout from '../../components/layout'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import BackButton from "../../components/BackBtn";
 
 export default function drawingEleven(){
   return(
@@ -9,7 +10,7 @@ export default function drawingEleven(){
       <Head>
         <title>Human Study 2 | Jonathan A Klein</title>
       </Head>
-      <Link href="/drawing">&lt; Back</Link>
+      <BackButton/>
       <div>
         <h1>Human Study 2</h1>
         <p>Another Study of the human body.</p>

@@ -11,6 +11,7 @@ export default function Menu(){
             src="https://jk-docs.s3.us-east-2.amazonaws.com/images/jk-Logo.png"
             width={50}
             height={33}
+            alt="Jonathan Klein Logo"
           />
         </Link>
       </div>

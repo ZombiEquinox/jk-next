@@ -8,15 +8,13 @@ export default function LayoutHome({children}){
   return (
     <div id="page">
       <Head>
-        <link rel="icon" href="favicon.ico" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <main className="drawer drawer-end">
         <input id="jk-drawer" type="checkbox" className="drawer-toggle" />
-        <div className="drawer-content flex flex-col">
+        <div className="drawer-content flex flex-col h-full">
           <Menu />
-          <HomeHero />
-          <div className="container min-h-screen mx-auto px-4 py-4 drawer">
+          <div className="px-4 mx-auto">
             {children}
           </div>
           <Footer />

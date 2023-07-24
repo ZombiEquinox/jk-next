@@ -2,6 +2,7 @@ import Layout from '../../components/layout'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import BackButton from "../../components/BackBtn";
 
 
 export default function designTwo(){
@@ -10,7 +11,7 @@ export default function designTwo(){
       <Head>
         <title>Art | Jonathan A Klein</title>
       </Head>
-      <Link href="/graphic_design">&lt; Back</Link>
+      <BackButton/>
       <div>
         <h1>Art</h1>
         <p><strong>Position:</strong> Illinois State University Student</p>

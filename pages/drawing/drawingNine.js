@@ -2,6 +2,7 @@ import Layout from '../../components/layout'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import BackButton from "../../components/BackBtn";
 
 export default function drawingNine(){
   return(
@@ -9,7 +10,7 @@ export default function drawingNine(){
       <Head>
         <title>Nude Study 4 | Jonathan A Klein</title>
       </Head>
-      <Link href="/drawing">&lt; Back</Link>
+      <BackButton/>
       <div>
         <h1>Nude Study 4</h1>
         <p>Another nude study.</p>

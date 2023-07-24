@@ -2,6 +2,7 @@ import Layout from '../../components/layout'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import BackButton from "../../components/BackBtn";
 
 export default function interactiveThree(){
   return(
@@ -9,7 +10,7 @@ export default function interactiveThree(){
       <Head>
         <title>Contoured Analytics | Jonathan A Klein</title>
       </Head>
-      <Link href="/interactive">&lt; Back</Link>
+      <BackButton/>
       <div>
         <h1>Contoured Analytics</h1>
         <p>Using MaxMSP this lets the user play with tetris pieces to do with whatever they like. It shows the leftbrain right brain function, one side is more analytical being represented in 1's and 0's, while the other side is more creative being represented in a Greenscreen effect, showing what you are doing in the background of what you are doing. </p>

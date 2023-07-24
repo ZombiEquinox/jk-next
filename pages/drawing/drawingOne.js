@@ -2,6 +2,7 @@ import Layout from '../../components/layout'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import BackButton from "../../components/BackBtn";
 
 export default function drawingOne(){
   return(
@@ -9,7 +10,7 @@ export default function drawingOne(){
       <Head>
         <title>Gamers Still Life Drawing | Jonathan A Klein</title>
       </Head>
-      <Link href="/drawing">&lt; Back</Link>
+      <BackButton/>
       <div>
         <h1>Gamers Still Life Drawing</h1>
         <p>With this piece I wanted to capture my life at that time. I was a hardcore gamer, I was pretty much single and in College. I lived the life of a gamer, played games, watched anime, and drank copious amounts of caffiene.</p>

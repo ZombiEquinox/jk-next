@@ -17,6 +17,14 @@ export default function Web(){
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <Card
+          link="/web/webTwentyOne"
+          title="American Giants"
+          text="View Description"
+          img="https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/American-Giants-thumb.jpg"
+          width={width}
+          height={height}
+        />
+        <Card
           link="/web/webTwenty"
           title="Avaneer Health"
           text="View Description"
@@ -178,20 +186,28 @@ export default function Web(){
         />
       </div>
       <div>
-        <h2>More Work</h2>
-        <h3>Illinois State University</h3>
+        <h2 className="text-base md:text-2xl">More Work</h2>
+        <h3 className="text-base md:text-xl">Illinois State University</h3>
         <ul>
           <li>
             <strong>Role:</strong> Web Design and Developer Intern
             <br />
-            <a href="http://internationalstudies.illinoisstate.edu/">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="http://internationalstudies.illinoisstate.edu/"
+            >
               International Studies and Programs
             </a>
           </li>
           <li>
             <strong>Role:</strong> Web Design and Developer Intern
             <br />
-            <a href="http://internationalstudies.illinoisstate.edu/">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="http://internationalstudies.illinoisstate.edu/"
+            >
               International Studies and Programs
             </a>
           </li>
@@ -203,7 +219,11 @@ export default function Web(){
           <li>
             <strong>Role:</strong> Web Design and Developer Intern
             <br />
-            <a href="http://seniorprofessionals.illinoisstate.edu/">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="http://seniorprofessionals.illinoisstate.edu/"
+            >
               Senior Professionals
             </a>
           </li>
@@ -225,19 +245,27 @@ export default function Web(){
           <li>
             <strong>Role:</strong> Web Design and Developer Extra Help
             <br />
-            <a href="http://purchasing.illinoisstate.edu/">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="http://purchasing.illinoisstate.edu/"
+            >
               Office of the Comptroller | Purchasing
             </a>
           </li>
           <li>
             <strong>Role:</strong> Web Design and Developer Student Worker
             <br />
-            <a href="http://ole.illinoisstate.edu/">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="http://ole.illinoisstate.edu/"
+            >
               Organization of Latino/a employees
             </a>
           </li>
         </ul>
-        <h3>State Farm</h3>
+        <h3 className="text-base md:text-xl">State Farm</h3>
         <p>
           <small>
             Due to legal restrictions I am unable to display this work.
@@ -245,51 +273,51 @@ export default function Web(){
         </p>
         <ul>
           <li>
-            <strong>State Farm</strong> - UI Design for ABS Mobile{" "}
+            UI Design for ABS Mobile{" "}
             <em>Web-App</em> - <br />
             Online Tool designed for State Farm Agents to be able to access
             their Book of Business and view details on the cutsomer on the go.
           </li>
           <li>
-            <strong>State Farm</strong> - UI Design for State Farm Help Center -{" "}
+            UI Design for State Farm Help Center -{" "}
             <br />
             Allows customers to contact their agent or a Help Rep on
             StateFarm.com
           </li>
           <li>
-            <strong>State Farm</strong> - UI Design Modification for Project
+            UI Design Modification for Project
             "KnightHawk" <em>Android App</em>
           </li>
           <li>
-            <strong>State Farm</strong> - UI Design for "Sales Leader Tools"{" "}
+            UI Design for "Sales Leader Tools"{" "}
             <em>Android and iOS App</em> - <br />
             Allows a State Farm Sales Leader to contact agents within their
             territory on the go, also allows them to record their milage and
             expenses on the go
           </li>
           <li>
-            <strong>State Farm</strong> - UI/UX Design for Agency Suite of Tools{" "}
+             UI/UX Design for Agency Suite of Tools{" "}
             <em>Web-App</em> - <br />
             Allows State Farm agents to work on their business plan, assist team
             members, and veiw their metrics. Also allows the Sales Leaders and
             higher roles to do similiar functions
           </li>
           <li>
-            <strong>State Farm</strong> - UI/UX Design Agency Navigator{" "}
+            UI/UX Design Agency Navigator{" "}
             <em>Android and iOS app</em> - <br />
             Part of the "Sales Leader Tools" package. Allows Sales leaders view
             thier agents office locations, view their goals, contact their
             agents, and view agents business plan and metrics.
           </li>
           <li>
-            <strong>State Farm</strong> - Interactive Prototype for ABS Mobile.
+            Interactive Prototype for ABS Mobile.
           </li>
           <li>
-            <strong>State Farm</strong> - Interactive Prototype for Renters and
+            Interactive Prototype for Renters and
             Condo Insurance Quote processes.
           </li>
         </ul>
-        <h3>Onefire Media</h3>
+        <h3 className="text-base md:text-xl">Onefire Media</h3>
         <ul>
           <li>
             <strong>Role:</strong> Junior Front-End Developer - Site Updates
@@ -304,13 +332,23 @@ export default function Web(){
           <li>
             <strong>Role:</strong> Junior Front-End Developer - Site Updates
             <br />
-            <a href="http://midwesternsecurities.com/">Midwestern Solutions</a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="http://midwesternsecurities.com/"
+            >
+              Midwestern Solutions
+            </a>
           </li>
           <li>
             <strong>Role:</strong> Junior Front-End Developer / Designer - Site
             Updates
             <br />
-            <a href="http://www.integrityts.com/">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="http://www.integrityts.com/"
+            >
               Integrity Technology Solutions
             </a>
           </li>
@@ -323,7 +361,13 @@ export default function Web(){
           <li>
             <strong>Role:</strong> Junior Front-End Developer - Site Updates
             <br />
-            <a href="https://bremerjewelry.com/">Bremer Jewlery</a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://bremerjewelry.com/"
+            >
+              Bremer Jewlery
+            </a>
           </li>
           <li>
             <strong>Role:</strong> Design / Animation - Web Ads
@@ -331,13 +375,17 @@ export default function Web(){
             MMI Agency
           </li>
         </ul>
-        <h3>AutonomouStuff</h3>
+        <h3 className="text-base md:text-xl">AutonomouStuff</h3>
         <ul>
           <li>
             <strong>Role:</strong> Front-End Web Developer/Web Designer -
             Platform Selection Tool
             <br />
-            <a href="https://autonomoustuff.com/platform/platform-selector/">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://autonomoustuff.com/platform/platform-selector/"
+            >
               AutonomouStuff Platform Selector Guide
             </a>
           </li>
@@ -346,7 +394,7 @@ export default function Web(){
             Redesign
           </li>
         </ul>
-        <h3>Keplr Vision</h3>
+        <h3 className="text-base md:text-xl">Keplr Vision</h3>
         <ul>
           <li>
             <strong>Role:</strong> Web Designer/Front-End Developer - Keplr
@@ -357,7 +405,7 @@ export default function Web(){
             SEO Updates
           </li>
         </ul>
-        <h3>MComm Group</h3>
+        <h3 className="text-base md:text-xl">MComm Group</h3>
         <ul>
           <li>
             <strong>Role:</strong> Front-End Developer - MComm CRM Redesign -
@@ -369,7 +417,11 @@ export default function Web(){
           </li>
           <li>
             <strong>Role:</strong> Front-End Developer -{" "}
-            <a href="https://mobileagsolutions.com/">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://mobileagsolutions.com/"
+            >
               Mobile Ag Solutions Promo page
             </a>{" "}
             - Foundations / Jekyll
@@ -379,7 +431,7 @@ export default function Web(){
             Prototype - Adobe XD
           </li>
         </ul>
-        <h3>Brado</h3>
+        <h3 className="text-base md:text-xl">Brado</h3>
         <ul>
           <li>
             <strong>Role:</strong> Senior Front-End Developer - Email Templates
@@ -404,7 +456,11 @@ export default function Web(){
           <li>
             <strong>Role:</strong> Senior Front-End Developer - Site Updates
             <br />
-            <a href="https://www.geneticsandeyecare.com/">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.geneticsandeyecare.com/"
+            >
               Genetics and Eyecare Today
             </a>{" "}
             - WordPress
@@ -412,12 +468,23 @@ export default function Web(){
           <li>
             <strong>Role:</strong> Senior Front-End Developer - Site Updates
             <br />
-            <a href="https://smartmouth.com/">Smart Mouth</a> - WordPress
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://smartmouth.com/"
+            >
+              Smart Mouth
+            </a>{" "}
+            - WordPress
           </li>
           <li>
             <strong>Role:</strong> Senior Front-End Developer - Site Updates
             <br />
-            <a href="https://www.infertile.com/">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.infertile.com/"
+            >
               Infertility Center of St. Louis
             </a>{" "}
             - WordPress
@@ -426,7 +493,11 @@ export default function Web(){
             <strong>Role:</strong> Senior Front-End Developer - Site
             Updates/Animation/Email Templates
             <br />
-            <a href="https://www.healthcarehighways.com/">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.healthcarehighways.com/"
+            >
               Healthcare Highways
             </a>{" "}
             - Hubspot
@@ -435,12 +506,27 @@ export default function Web(){
             <strong>Role:</strong> Senior Front-End Developer - Site
             Updates/Email Templates
             <br />
-            <a href="https://www.revelohealth.net/">Revelohealth</a> - Hubspot
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.revelohealth.net/"
+            >
+              Revelohealth
+            </a>{" "}
+            - Hubspot
           </li>
           <li>
-            <strong>Role:</strong> Senior Front-End Developer - Development
+            <strong>Role:</strong> Senior Front-End Developer - Development/Site
+            Updates/Webmaster+-
             <br />
-            American Giants - Webflow
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://brado.net/"
+            >
+              Brado.net
+            </a>{" "}
+            - WordPress
           </li>
         </ul>
       </div>

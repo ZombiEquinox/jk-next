@@ -2,6 +2,7 @@ import Layout from '../../components/layout'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import BackButton from "../../components/BackBtn";
 
 export default function paintingTwo(){
   return(
@@ -9,7 +10,7 @@ export default function paintingTwo(){
       <Head>
         <title>Abstract Painting | Jonathan A Klein</title>
       </Head>
-      <Link href="/painting">&lt; Back</Link>
+      <BackButton/>
       <div>
         <h1>Abstract Painting</h1>
         <p>Part of my small abstract series, tried a few paint drip effects. </p>        

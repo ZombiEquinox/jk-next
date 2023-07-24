@@ -6,31 +6,31 @@ export default function Drawer(){
   const router = useRouter();
 
   return (
-    <div className="drawer-side">
+    <div className="drawer-side z-50">
       <label htmlFor="jk-drawer" className="drawer-overlay"></label>
       <nav className="menu p-4 pt-16 w-80 h-full bg-base-200 z-50">
-        <Link href="/">
+        <Link className='text-xl mb-3' href="/">
             Home
         </Link>
-        <Link href="/web">
+        <Link className='text-xl mb-3' href="/web">
             Web
         </Link>
-        <Link href="/video">
+        <Link className='text-xl mb-3' href="/video">
             Video
         </Link>
-        <Link href="/graphic_design">
+        <Link className='text-xl mb-3' href="/graphic_design">
             Graphic Design
         </Link>
-        <Link href="/painting" >
+        <Link className='text-xl mb-3' href="/painting" >
             Paintings
         </Link>
-        <Link href="/drawing">
+        <Link className='text-xl mb-3' href="/drawing">
             Drawings
         </Link>
-        <Link href="/interactive">
+        <Link className='text-xl mb-3' href="/interactive">
             Interactive
         </Link>
-        <Link href="/about">
+        <Link className='text-xl mb-3' href="/about">
             About Me
         </Link>
       </nav>

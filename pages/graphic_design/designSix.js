@@ -2,6 +2,7 @@ import Layout from '../../components/layout'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import BackButton from "../../components/BackBtn";
 
 export default function designSix(){
   return(
@@ -9,7 +10,7 @@ export default function designSix(){
       <Head>
         <title>Body Image Program Marquee Image | Jonathan A Klein</title>
       </Head>
-      <Link href="/graphic_design">&lt; Back</Link>
+      <BackButton/>
       <div>
         <h1>Body Image Program Marquee Image</h1>
         <p><strong>Company:</strong> Illinois State University - Web &amp; Interactive Communications</p>

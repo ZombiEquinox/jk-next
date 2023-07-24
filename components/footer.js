@@ -9,12 +9,13 @@ function year(){
 }
 
   return (
-    <footer className="footer items-center p-4 bg-primary text-neutral-content mt-3">
+    <footer className="footer items-center p-4 bg-primary text-neutral-content mt-3 min-h-[60px]">
       <div className="items-center grid-flow-col">
         <Image
           src="https://jk-docs.s3.us-east-2.amazonaws.com/images/jk-Logo.png"
           width={50}
           height={33}
+          alt="Jonathan Klein Footer Logo"
         />
         <Link href="/">JonathanAKlein.com</Link> &copy;{year()}
       </div>

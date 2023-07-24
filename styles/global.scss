@@ -37,27 +37,7 @@ height: 100%;
 }
 
 
-/** Home Page Styles */
-.home-hero{
-  margin-top: -91.5px;
-  .photo-area{
-    background-image: url('https://jk-docs.s3.us-east-2.amazonaws.com/images/jk-photograph.jpg');
-    background-size: cover;
-    background-position: center 35%;
-    background-repeat: no-repeat;
-  }
-}
 
-@media screen and (max-width: 767px) {
-  .home-hero{
-    .hero-container{
-      padding-top: 91.5px;
-    }
-    .photo-area{
-    background-position: center -195px;
-  }
-  }
-}
 
 /** DAISYUI Customization **/
 
