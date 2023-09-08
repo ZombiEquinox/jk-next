@@ -1,10 +1,12 @@
 import Layout from "../components/layout"
 import Head from 'next/head'
 import Card from '../components/card'
+import { fetchWebProjects } from "../src/utils"
 
-export default function Web(){
+const Web = (webProjects)=>{
   let width = 600;
   let height = 600;
+  console.log(webProjects);
   return (
     <Layout>
       <Head>
@@ -16,6 +18,17 @@ export default function Web(){
         </h1>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {webProjects.data.map((project) => (
+          <Card
+            key={project.sys.id}
+            link={`/web/${project.sys.id}`}
+            title={project.fields.title}
+            text="View Description"
+            img={project.fields.thumbnail}
+            width={width}
+            height={height}
+          />
+        ))}
         <Card
           link="/web/webTwentyOne"
           title="American Giants"
@@ -152,38 +165,6 @@ export default function Web(){
           width={width}
           height={height}
         />
-        <Card
-          link="/web/webFour"
-          title="ISU Redbird Typing Game"
-          text="View Description"
-          img="https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/website4.jpg"
-          width={width}
-          height={height}
-        />
-        <Card
-          link="/web/webThree"
-          title="ISU Redbird Matching Game"
-          text="View Description"
-          img="https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/website3.jpg"
-          width={width}
-          height={height}
-        />
-        <Card
-          link="/web/webTwo"
-          title="ISU Redbird Ball Catch Game"
-          text="View Description"
-          img="https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/website2.jpg"
-          width={width}
-          height={height}
-        />
-        <Card
-          link="/web/webOne"
-          title="Reggie Red Bird Coloring"
-          text="View Description"
-          img="https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/website1.jpg"
-          width={width}
-          height={height}
-        />
       </div>
       <div>
         <h2 className="text-base md:text-2xl">More Work</h2>
@@ -273,48 +254,41 @@ export default function Web(){
         </p>
         <ul>
           <li>
-            UI Design for ABS Mobile{" "}
-            <em>Web-App</em> - <br />
+            UI Design for ABS Mobile <em>Web-App</em> - <br />
             Online Tool designed for State Farm Agents to be able to access
             their Book of Business and view details on the cutsomer on the go.
           </li>
           <li>
-            UI Design for State Farm Help Center -{" "}
-            <br />
+            UI Design for State Farm Help Center - <br />
             Allows customers to contact their agent or a Help Rep on
             StateFarm.com
           </li>
           <li>
-            UI Design Modification for Project
-            "KnightHawk" <em>Android App</em>
+            UI Design Modification for Project "KnightHawk" <em>Android App</em>
           </li>
           <li>
-            UI Design for "Sales Leader Tools"{" "}
-            <em>Android and iOS App</em> - <br />
+            UI Design for "Sales Leader Tools" <em>Android and iOS App</em> -{" "}
+            <br />
             Allows a State Farm Sales Leader to contact agents within their
             territory on the go, also allows them to record their milage and
             expenses on the go
           </li>
           <li>
-             UI/UX Design for Agency Suite of Tools{" "}
-            <em>Web-App</em> - <br />
+            UI/UX Design for Agency Suite of Tools <em>Web-App</em> - <br />
             Allows State Farm agents to work on their business plan, assist team
             members, and veiw their metrics. Also allows the Sales Leaders and
             higher roles to do similiar functions
           </li>
           <li>
-            UI/UX Design Agency Navigator{" "}
-            <em>Android and iOS app</em> - <br />
+            UI/UX Design Agency Navigator <em>Android and iOS app</em> - <br />
             Part of the "Sales Leader Tools" package. Allows Sales leaders view
             thier agents office locations, view their goals, contact their
             agents, and view agents business plan and metrics.
           </li>
+          <li>Interactive Prototype for ABS Mobile.</li>
           <li>
-            Interactive Prototype for ABS Mobile.
-          </li>
-          <li>
-            Interactive Prototype for Renters and
-            Condo Insurance Quote processes.
+            Interactive Prototype for Renters and Condo Insurance Quote
+            processes.
           </li>
         </ul>
         <h3 className="text-base md:text-xl">Onefire Media</h3>
@@ -517,7 +491,7 @@ export default function Web(){
           </li>
           <li>
             <strong>Role:</strong> Senior Front-End Developer - Development/Site
-            Updates/Webmaster+-
+            Updates/Webmaster
             <br />
             <a
               target="_blank"
@@ -529,7 +503,36 @@ export default function Web(){
             - WordPress
           </li>
         </ul>
+        <h3 className="text-base md:text-xl">Freelance</h3>
+        <ul>
+          <li>
+            <strong>Role:</strong> Design Consultant
+            <br />
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://yogaatthepark.com/"
+            >
+              Yoga at the park
+            </a>{" "}
+            - Laravel/Bootstrap
+          </li>
+        </ul>
       </div>
     </Layout>
   );
 }
+
+export async function getStaticProps() {
+  const entries = await fetchWebProjects();
+  let data = entries.filter((entry) => entry.sys.contentType.sys.id === "web");
+  const fields = data.map((entry) => entry.fields);
+  return {
+    props: {
+      fields:fields,
+      data:data
+    },
+  };
+}
+
+export default Web;
