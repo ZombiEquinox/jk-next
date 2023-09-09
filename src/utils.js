@@ -24,5 +24,20 @@ export async function fetchWebProject(slug) {
   if(response.items) return response.items;
 }
 
+export async function fetchDrawingProjects() {
+  const response = await client.getContentType("drawings");
+  const drawings = await client.getEntries({ content_type: "drawings" });
 
-export default { fetchWebProjects, fetchWebProject };
+  if (drawings.items) return drawings.items;
+}
+
+export async function fetchDrawingProject(slug) {
+  const response = await client.getEntries({
+    content_type: "drawings",
+    "fields.drawingId": slug,
+  });
+
+  if (response.items) return response.items;
+}
+
+export default { fetchWebProjects, fetchWebProject, fetchDrawingProjects, fetchDrawingProject };
