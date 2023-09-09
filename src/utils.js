@@ -8,10 +8,21 @@ const client = createClient({
 
 export async function fetchWebProjects() {
   const response = await client.getContentType('web');
-  const webProjects = await client.getEntries();
+  const webProjects = await client.getEntries(
+    { content_type: 'web' },
+  );
 
   if(webProjects.items) return webProjects.items;
 }
 
+export async function fetchWebProject(slug) {
+  const response = await client.getEntries({
+    content_type: 'web',
+    'fields.webId': slug,
+  });
 
-export default { fetchWebProjects };
+  if(response.items) return response.items;
+}
+
+
+export default { fetchWebProjects, fetchWebProject };

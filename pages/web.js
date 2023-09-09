@@ -6,7 +6,6 @@ import { fetchWebProjects } from "../src/utils"
 const Web = (webProjects)=>{
   let width = 600;
   let height = 600;
-  console.log(webProjects);
   return (
     <Layout>
       <Head>
@@ -21,7 +20,7 @@ const Web = (webProjects)=>{
         {webProjects.data.map((project) => (
           <Card
             key={project.sys.id}
-            link={`/web/${project.sys.id}`}
+            link={`/web/${project.fields.webId}`}
             title={project.fields.title}
             text="View Description"
             img={project.fields.thumbnail}
@@ -29,142 +28,7 @@ const Web = (webProjects)=>{
             height={height}
           />
         ))}
-        <Card
-          link="/web/webTwentyOne"
-          title="American Giants"
-          text="View Description"
-          img="https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/American-Giants-thumb.jpg"
-          width={width}
-          height={height}
-        />
-        <Card
-          link="/web/webTwenty"
-          title="Avaneer Health"
-          text="View Description"
-          img="https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/avaneerhealth.jpg"
-          width={width}
-          height={height}
-        />
-        <Card
-          link="/web/webNineteen"
-          title="Reimagine Care"
-          text="View Description"
-          img="https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/reimaginecare.jpg"
-          width={width}
-          height={height}
-        />
-        <Card
-          link="/web/webEighteen"
-          title="Best Estimate Pro"
-          text="View Description"
-          img="https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/bep.jpg"
-          width={width}
-          height={height}
-        />
-        <Card
-          link="/web/webSeventeen"
-          title="Potain Self-Erecting Crawler Crane"
-          text="View Description"
-          img="https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/potain-home.jpg"
-          width={width}
-          height={height}
-        />
-        <Card
-          link="/web/webSixteen"
-          title="1PURE CBD"
-          text="View Description"
-          img="https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/onepurcbd-home.jpg.jpg"
-          width={width}
-          height={height}
-        />
-        <Card
-          link="/web/webFifteen"
-          title="Manitowoc Small Crawler Crane"
-          text="View Description"
-          img="https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/home-manitowoc-crawler-crane.jpg"
-          width={width}
-          height={height}
-        />
-        <Card
-          link="/web/webFourteen"
-          title="AutonomouStuff Data Calculator"
-          text="View Description"
-          img="https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/astuff_data_thumb.jpg"
-          width={width}
-          height={height}
-        />
-        <Card
-          link="/web/webThirteen"
-          title="AutonomouStuff"
-          text="View Description"
-          img="https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/astuff_website.jpg"
-          width={width}
-          height={height}
-        />
-        <Card
-          link="/web/webTwelve"
-          title="Oak Lawn Estates"
-          text="View Description"
-          img="https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/oaklawn-thumb.png"
-          width={width}
-          height={height}
-        />
-        <Card
-          link="/web/webEleven"
-          title="CAT Connect"
-          text="View Description"
-          img="https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/cat-conn-logo.svg"
-          width={width}
-          height={height}
-        />
-        <Card
-          link="/web/webTen"
-          title="Peoria Riverplex Mobile App"
-          text="View Description"
-          img="https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/riverplex-app-thumb.png"
-          width={width}
-          height={height}
-        />
-        <Card
-          link="/web/webNine"
-          title="Peoria Riverplex"
-          text="View Description"
-          img="https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/riverplex-thumb.png"
-          width={width}
-          height={height}
-        />
-        <Card
-          link="/web/webEight"
-          title="PixelPrediction"
-          text="View Description"
-          img="https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/pixelpredictive-thumb.png"
-          width={width}
-          height={height}
-        />
-        <Card
-          link="/web/webSeven"
-          title="Greater Peoria Works"
-          text="View Description"
-          img="https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/greaterpeoriaworksthumb.png"
-          width={width}
-          height={height}
-        />
-        <Card
-          link="/web/webSix"
-          title="ISU Student Health Services"
-          text="View Description"
-          img="https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/website20.jpg"
-          width={width}
-          height={height}
-        />
-        <Card
-          link="/web/webFive"
-          title="ISU Association of Black Academic Employees"
-          text="View Description"
-          img="https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/web/website9.jpg"
-          width={width}
-          height={height}
-        />
+
       </div>
       <div>
         <h2 className="text-base md:text-2xl">More Work</h2>
@@ -525,12 +389,11 @@ const Web = (webProjects)=>{
 
 export async function getStaticProps() {
   const entries = await fetchWebProjects();
-  let data = entries.filter((entry) => entry.sys.contentType.sys.id === "web");
-  const fields = data.map((entry) => entry.fields);
+  //let data = entries.filter((entry) => entry.sys.contentType.sys.id === "web");
+  //const fields = data.map((entry) => entry.fields);
   return {
     props: {
-      fields:fields,
-      data:data
+      data:entries
     },
   };
 }
