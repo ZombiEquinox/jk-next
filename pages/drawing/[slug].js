@@ -15,19 +15,7 @@ const drawingPage = ({ data }) => {
       <div className="container mt-4">
         <BackButton />
         <h1>{data.title}</h1>
-        <p>Company: {data.company}</p>
-        <p>Position: {data.role}</p>
-        <p>Technology: {data.technology}</p>
-        <p>
-          URL:{" "}
-          {data.url ? (
-            <a target="_blank" rel="nopener noreferrer" href={data.url}>
-              {data.url}
-            </a>
-          ) : (
-            "No Longer Available"
-          )}
-        </p>
+        <p>Medium: {data.medium}</p>
         {data.notes ? <p>Note: {data.notes}</p> : null}
         <div className="my-6">
           {documentToReactComponents(data.description)}
