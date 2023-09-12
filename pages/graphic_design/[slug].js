@@ -1,11 +1,11 @@
 import Layout from "../../components/layout";
 import Head from "next/head";
 import Image from "next/image";
-import { fetchPaintingProject } from "../../src/utils";
+import { fetchGraphicDesignProject } from "../../src/utils";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import BackButton from "../../components/BackBtn";
 
-const paintingPage = ({ data }) => {
+const graphicDesignPage = ({ data }) => {
   if (!data) return <div>Loading...</div>;
   return (
     <Layout>
@@ -15,18 +15,22 @@ const paintingPage = ({ data }) => {
       <div className="container mt-4">
         <BackButton />
         <h1>{data.title}</h1>
-        <p>Medium: {data.medium}</p>
-        {data.notes ? <p>Note: {data.notes}</p> : null}
+        {data.company ? <p>Company: {data.company}</p> : null}
+        {data.position ? <p>Position: {data.position}</p> : null}
         <div className="my-6">
-          {documentToReactComponents(data.description)}
+          <p>{data.description}</p>
         </div>
         <div className="my-6">
-          <Image
-            alt={data.images.fields.title}
-            src={`https:${data.images.fields.file.url}`}
-            width={data.images.fields.file.details.image.width}
-            height={data.images.fields.file.details.image.height}
+          {data.image.map((image) => (
+            <Image
+            key={image.sys.id}
+            alt={image.fields.title}
+            src={`https:${image.fields.file.url}`}
+            width={image.fields.file.details.image.width}
+            height={image.fields.file.details.image.height}
+            priority={true}
           />
+          ))}
         </div>
       </div>
     </Layout>
@@ -34,7 +38,7 @@ const paintingPage = ({ data }) => {
 };
 
 export async function getServerSideProps(context) {
-  const entries = await fetchPaintingProject(context.params.slug);
+  const entries = await fetchGraphicDesignProject(context.params.slug);
   return {
     props: {
       data: entries[0].fields,
@@ -42,4 +46,4 @@ export async function getServerSideProps(context) {
   };
 }
 
-export default paintingPage;
+export default graphicDesignPage;
