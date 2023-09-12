@@ -18,22 +18,6 @@ export default function Video(){
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <Card
-          link="/video/videoOne"
-          title="1min Arduino Commercial"
-          text="View Description"
-          img="https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/video/video1.jpg"
-          width={width}
-          height={height}
-        />
-        <Card
-          link="/video/videoTwo"
-          title="Dance with the Devil in the pale moon light"
-          text="View Description"
-          img="https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/video/video2.jpg"
-          width={width}
-          height={height}
-        />
-        <Card
           link="/video/videoThree"
           title="Ari, the 5 Year old Minecraft Player"
           text="View Description"
@@ -62,22 +46,6 @@ export default function Video(){
           title="Video is Art"
           text="View Description"
           img="https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/video/video8.jpg"
-          width={width}
-          height={height}
-        />
-        <Card
-          link="/video/videoSeven"
-          title="AutonomouStuff PACMod Systems"
-          text="View Description"
-          img="https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/video/astuff_pacmod_thumb.jpg"
-          width={width}
-          height={height}
-        />
-        <Card
-          link="/video/videoEight"
-          title="AutonomouStuff Open Autonomy Pilot"
-          text="View Description"
-          img="https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/video/astuff-video-1.png"
           width={width}
           height={height}
         />
