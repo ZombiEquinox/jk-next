@@ -110,4 +110,12 @@ export async function fetchVideoProject(slug) {
   if (response.items) return response.items;
 }
 
+export async function fetchAboutMe() {
+  const response = await client.getEntries({
+    content_type: "about",
+  });
+
+  if (response.items) return response.items;
+}
+
 export default { fetchWebProjects, fetchWebProject, fetchDrawingProjects, fetchDrawingProject, fetchPaintingProjects, fetchPaintingProject, fetchGraphicDesignProjects, fetchGraphicDesignProject, fetchInteractiveProjects, fetchInteractiveProject };
