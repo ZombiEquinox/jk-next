@@ -10,6 +10,7 @@
     "@tailwindcss/forms": "^0.5.3",
     "contentful": "^10.5.1",
     "daisyui": "^3.2.1",
+    "framer-motion": "^10.16.4",
     "include-media": "^2.0.0",
     "next": "^13.4.9",
     "react": "^18.2.0",

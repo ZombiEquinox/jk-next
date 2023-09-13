@@ -1,11 +1,14 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { useEffect, useRef } from 'react';
-import { gsap } from "gsap";
+import {motion} from 'framer-motion';
 
 export default function Card(props){
 
   return (
+    <motion.div
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    transition={{ type:"spring", stiffness: 100 }}>
     <div className="card bg-base-100 shadow-xl image-full m-2">
       <figure>
         <Image
@@ -32,5 +35,6 @@ export default function Card(props){
         </div>
       </div>
     </div>
+    </motion.div>
   );
 }
