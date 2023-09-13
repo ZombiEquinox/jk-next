@@ -2,7 +2,6 @@ import Layout from "../../components/layout";
 import Head from "next/head";
 import Image from "next/image";
 import { fetchVideoProject } from "../../src/utils";
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import BackButton from "../../components/BackBtn";
 
 const videoPage = ({ data }) => {
@@ -18,7 +17,7 @@ const videoPage = ({ data }) => {
         {data.company ? <p>Company: {data.company}</p> : null}
         {data.position ? <p>Position: {data.position}</p> : null}
         <div className="my-6">
-          {documentToReactComponents(data.description)}
+          <p>{data.description}</p>
         </div>
         <div className="my-6">
           {data.vimeoUrl ? (

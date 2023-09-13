@@ -6,7 +6,7 @@ import { gsap } from "gsap";
 export default function Card(props){
 
   return (
-    <div className="card bg-base-100 shadow-xl image-full w-96 m-2">
+    <div className="card bg-base-100 shadow-xl image-full m-2">
       <figure>
         <Image
           src={props.img}
