@@ -2,8 +2,9 @@ import Layout from "../components/layout"
 import Link from "next/link"
 import Head from 'next/head'
 import Card from '../components/card'
+import { fetchVideoProjects } from "../src/utils";
 
-export default function Video(){
+export default function Video(videos){
   let width = 600;
   let height = 600;
   return (
@@ -17,70 +18,17 @@ export default function Video(){
         </h1>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <Card
-          link="/video/videoOne"
-          title="1min Arduino Commercial"
-          text="View Description"
-          img="https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/video/video1.jpg"
-          width={width}
-          height={height}
-        />
-        <Card
-          link="/video/videoTwo"
-          title="Dance with the Devil in the pale moon light"
-          text="View Description"
-          img="https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/video/video2.jpg"
-          width={width}
-          height={height}
-        />
-        <Card
-          link="/video/videoThree"
-          title="Ari, the 5 Year old Minecraft Player"
-          text="View Description"
-          img="https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/video/video3.jpg"
-          width={width}
-          height={height}
-        />
-        <Card
-          link="/video/videoFour"
-          title="Antistatic Image, an Interview with Ian Emser"
-          text="View Description"
-          img="https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/video/video4.jpg"
-          width={width}
-          height={height}
-        />
-        <Card
-          link="/video/videoFive"
-          title="Conklin's Barn II Dinner &amp; Theatre, History in Central Illinois"
-          text="View Description"
-          img="https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/video/video5.jpg"
-          width={width}
-          height={height}
-        />
-        <Card
-          link="/video/videoSix"
-          title="Video is Art"
-          text="View Description"
-          img="https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/video/video8.jpg"
-          width={width}
-          height={height}
-        />
-        <Card
-          link="/video/videoSeven"
-          title="AutonomouStuff PACMod Systems"
-          text="View Description"
-          img="https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/video/astuff_pacmod_thumb.jpg"
-          width={width}
-          height={height}
-        />
-        <Card
-          link="/video/videoEight"
-          title="AutonomouStuff Open Autonomy Pilot"
-          text="View Description"
-          img="https://jk-docs.s3.us-east-2.amazonaws.com/images/thumb/video/astuff-video-1.png"
-          width={width}
-          height={height}
-        />
+        {videos.data.map((video) => (
+          <Card
+            key={video.sys.id}
+            link={`/video/${video.fields.videoId}`}
+            title={video.fields.title}
+            text="View Description"
+            img={video.fields.thumbnail}
+            width={width}
+            height={height}
+          />
+        ))}
       </div>
       <div>
         <h2>Other Work</h2>
@@ -110,4 +58,13 @@ export default function Video(){
       </div>
     </Layout>
   );
+}
+
+export async function getStaticProps() {
+  const entries = await fetchVideoProjects();
+  return {
+    props: {
+      data: entries,
+    },
+  };
 }
