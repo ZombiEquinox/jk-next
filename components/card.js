@@ -5,11 +5,7 @@ import {motion} from 'framer-motion';
 export default function Card(props){
 
   return (
-    <motion.div
-    initial={{ opacity: 0 }}
-    whileInView={{ opacity: 1 }}
-    transition={{ type:"spring", stiffness: 100 }}>
-    <div className="card bg-base-100 shadow-xl image-full m-2">
+    <motion.div whileInView={{ opacity:1, y:0 }} initial={{ opacity: 0, y:100 }} transition={{ type:"spring", stiffness: 500, damping: 30 }} className="card bg-base-100 shadow-xl image-full m-2">
       <figure>
         <Image
           src={props.img}
@@ -26,15 +22,15 @@ export default function Card(props){
         </Link>
         <p>{props.description}</p>
         <div className="card-actions">
-          <Link
+          <motion.Link whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}
             href={props.link}
             className="btn btn-primary rounded-lg prose-stone hover:prose-stone"
           >
             {props.text}
-          </Link>
+          </motion.Link>
         </div>
       </div>
-    </div>
     </motion.div>
+
   );
 }
