@@ -1,10 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  mode: "jit",
-  purge: [
-    "./app/**/*.{js,ts,jsx,tsx}",
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+  content: [
+    "./src/app/**/*.{js,ts,jsx,tsx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
   ], // or 'media' or 'class'
   theme: {
     extend: {
@@ -88,24 +87,16 @@ module.exports = {
         jk: {
           primary: "#3c2f46" /* Primary color */,
           "primary-focus": "#4D4C6D" /* Primary color - focused */,
-          "primary-content":
-            "#ffffff" /* Foreground content color to use on primary color */,
-
+          "primary-content":"#ffffff" /* Foreground content color to use on primary color */,
           secondary: "#7CE69D" /* Secondary color */,
           "secondary-focus": "#539784" /* Secondary color - focused */,
-          "secondary-content":
-            "#ffffff" /* Foreground content color to use on secondary color */,
-
+          "secondary-content":"#ffffff" /* Foreground content color to use on secondary color */,
           accent: "#F4F8C2" /* Accent color */,
           "accent-focus": "#FDFFE0" /* Accent color - focused */,
-          "accent-content":
-            "#ffffff" /* Foreground content color to use on accent color */,
-
+          "accent-content":"#ffffff" /* Foreground content color to use on accent color */,
           neutral: "#3d4451" /* Neutral color */,
           "neutral-focus": "#2a2e37" /* Neutral color - focused */,
-          "neutral-content":
-            "#ffffff" /* Foreground content color to use on neutral color */,
-
+          "neutral-content":"#ffffff" /* Foreground content color to use on neutral color */,
           info: "#2094f3" /* Info */,
           success: "#009485" /* Success */,
           warning: "#ff9900" /* Warning */,
