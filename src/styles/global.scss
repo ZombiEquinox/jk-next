@@ -10,8 +10,8 @@ html{
 }
 
 body{
-  background-image: url("../assets/layered-steps-haikei.svg");
-  background-repeat: no-repeat;
+  background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(60, 47, 70, 1) 100%);
   background-size: cover;
   height: 100%;
 }

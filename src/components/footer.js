@@ -9,7 +9,7 @@ function year(){
 }
 
   return (
-    <footer className="footer items-center p-4 bg-primary text-neutral-content mt-3 min-h-[60px]">
+    <footer className="footer items-center p-4 bg-[#3c2f46] text-neutral-content mt-3 min-h-[60px]">
       <div className="items-center grid-flow-col">
         <Image
           src="https://jk-docs.s3.us-east-2.amazonaws.com/images/jk-Logo.png"

@@ -1,12 +1,21 @@
+import Image from 'next/image';
 import Link from 'next/link'
 
 export default function HomeHero(){
   return (
-    <div className="hero min-h-[50vh]">
-      <div className="hero-content grid grid-cols-1 md:grid-cols-2 gap-20 h-full justify-end items-center">
-        <div className="w-full h-full grid place-items-center sm:py-4">
-          <div className="max-w-md">
-            <h1 className="mb-5 text-5xl font-bold header-text">
+<div className="hero min-h-screen">
+  <div className="hero-content flex-col lg:flex-row-reverse">
+    <div className='relative w-full m-w-[400px] aspect-square'>
+      <Image
+      src={'https://jk-docs.s3.us-east-2.amazonaws.com/images/JonathanKleinPortrait2.jpg'}
+      fill
+      priority
+      alt='Jonathan Klein Portrait'
+      sizes='(max-width: 400px) 100vw, 400px'
+      className=''/>
+    </div>
+    <div>
+       <h1 className="mb-5 text-5xl font-bold header-text">
               Konnic<span className="text-red-600">Hi</span>wa
             </h1>
             <p className="mb-5">Welcome to the Portfolio of Jonathan Klein.</p>
@@ -14,22 +23,16 @@ export default function HomeHero(){
               I am a Developer, Designer, Artist, and tech enthusiast.
             </p>
             <p className="mb-5">Stay awhile and get to know me (and listen).</p>
-
-            <div className="flex flex-row gap-3">
-              <Link href="#portfolio">
-                <button className="btn btn-md rounded-lg btn-primary">
-                  View Work
-                </button>
+            <div className='join'>
+              <Link href="#portfolio" className='btn btn-md rounded-lg btn-primary'>
+                View My Work
               </Link>
-              <Link href="/about">
-                <button className="btn btn-md rounded-lg btn-secondary">
-                  Learn About Me
-                </button>
+              <Link href="/about" className='btn btn-md rounded-lg btn-secondary'>
+                Learn About Me
               </Link>
             </div>
-          </div>
-        </div>
-      </div>
     </div>
+  </div>
+</div>
   );
 }
